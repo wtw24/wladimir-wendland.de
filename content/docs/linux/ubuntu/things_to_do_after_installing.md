@@ -5,7 +5,7 @@ categories: ["Ubuntu"]
 tags: ["linux", "ubuntu"]
 ---
 
-# Things to Do After Installing Ubuntu 20.04 LTS (Focal Fossa)
+# Things to Do After Installing Ubuntu GNOME 20.04 LTS (Focal Fossa)
 
 
 ---
