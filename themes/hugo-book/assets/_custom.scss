@@ -1,3 +1,46 @@
 /* You can add custom styles here. */
 
+.container {
+  max-width: 120rem;
+}
+
+.book-brand {
+  font-weight: bolder;
+  font-size: 1.3em;
+}
+
+.book-menu {
+  label {
+    font-weight: bolder;
+  }
+}
+
+.book-toc {
+  .book-toc-title {
+    font-size: 1.2rem;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #efefef;
+  }
+
+  .book-toc-content {
+    a {
+      color: #42434b;
+      font-size: 0.85rem;
+
+      &:hover {
+        color: #42434b;
+        opacity: 1;
+        text-decoration: underline;
+      }
+    }
+
+    overflow-y: scroll;
+  }
+
+  .book-toc-content::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 // @import "plugins/numbered";
