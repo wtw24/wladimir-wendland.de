@@ -3,7 +3,7 @@ build:
 
 deploy: create-build-folder rsync-deployments link-to-deployed clear-previous-build-folders
 
-create:
+create-build-folder:
 	ssh -o StrictHostKeyChecking=no ${DEPLOY_USER}@${DEPLOY_HOST} -p ${DEPLOY_PORT} 'rm -rf ${DEPLOY_PATH}/${BUILD_NUMBER}'
 	ssh -o StrictHostKeyChecking=no ${DEPLOY_USER}@${DEPLOY_HOST} -p ${DEPLOY_PORT} 'mkdir -p ${DEPLOY_PATH}/${BUILD_NUMBER}'
 
