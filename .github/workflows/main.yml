@@ -27,13 +27,15 @@ jobs:
         run: make ping && make --version
 
       - name: Create build folder
-        run: ls -lah && make create
         env:
           USER: ${{ secrets.DEPLOY_USER }}
           HOST: ${{ secrets.DEPLOY_HOST }}
           PORT: ${{ secrets.DEPLOY_PORT }}
           PATH: ${{ secrets.DEPLOY_PATH }}
           BUILD_NUMBER: ${GITHUB_RUN_NUMBER}
+        run: |
+          ls -lah
+          make create
 
       - name: Rsync deployments
         uses: burnett01/rsync-deployments@5.2
