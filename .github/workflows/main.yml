@@ -24,6 +24,8 @@ jobs:
         run: hugo --gc --minify
 
       - name: Make ping
+        env:
+          TEST: 'test_String'
         run: make ping && make --version
 
       - name: Create build folder
