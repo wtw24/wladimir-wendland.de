@@ -32,7 +32,7 @@ jobs:
           HOST: ${{ secrets.DEPLOY_HOST }}
           PORT: ${{ secrets.DEPLOY_PORT }}
           PATH: ${{ secrets.DEPLOY_PATH }}
-          BUILD_NUMBER: ${GITHUB_RUN_NUMBER}
+          BUILD_NUMBER: 1
         run: |
           ls -lah
           make create
