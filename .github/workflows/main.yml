@@ -26,8 +26,8 @@ jobs:
       - name: Make ping
         run: make ping && make --version
 
-      - name: Create target dir
-        run: make create-build-folder
+      - name: Create build folder
+        run: ls -lah && make create
         env:
           USER: ${{ secrets.DEPLOY_USER }}
           HOST: ${{ secrets.DEPLOY_HOST }}

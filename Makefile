@@ -3,7 +3,7 @@ deploy: build create-build-folder rsync-deployments link-to-deployed clear-previ
 build:
 	hugo --gc --minify
 
-create-build-folder:
+create:
 	ssh -o StrictHostKeyChecking=no ${USER}@${HOST} -p ${PORT} 'rm -rf ${PATH}/${BUILD_NUMBER}'
 	ssh -o StrictHostKeyChecking=no ${USER}@${HOST} -p ${PORT} 'mkdir -p ${PATH}/${BUILD_NUMBER}'
 
