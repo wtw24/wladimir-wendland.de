@@ -23,8 +23,8 @@ jobs:
       - name: Build
         run: hugo --gc --minify
 
-      - name: Install make
-        run: ls -lah && whereis make
+      - name: Make ping
+        run: make ping && make --version
 
       - name: Create target dir
         run: make create-build-folder

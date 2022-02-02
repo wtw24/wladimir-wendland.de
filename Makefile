@@ -15,3 +15,6 @@ link-to-deployed:
 
 clear-previous-build-folders:
 	ssh -o StrictHostKeyChecking=no ${USER}@${HOST} -p ${PORT} 'find ${PATH}/ -maxdepth 1 -mtime +1 -type d -exec rm -r {} \;'
+
+ping:
+	echo "pong"
