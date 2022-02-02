@@ -26,6 +26,11 @@ Wer sich bei Oracle für Cloud Free Tier registriert, kann in der Oracle-Cloud k
 3. Erstellen
 ~~~
 
+## SSH Verbindung
+~~~shell
+ssh -i <your-private-key-file> ubuntu@<your-public-ip-address>
+~~~
+
 ### Updates und Soft installieren
 ~~~shell
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove
@@ -106,9 +111,4 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 ## VM Neu starten
 ~~~shell
 reboot now
-~~~
-
-## SSH Verbiendung
-~~~shell
-ssh -i <your-private-key-file> ubuntu@<your-public-ip-address>
 ~~~
