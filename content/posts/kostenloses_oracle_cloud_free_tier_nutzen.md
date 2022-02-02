@@ -1,6 +1,6 @@
 ---
 author: "Wladimir Wendland"
-date: 2014-09-28
+date: 2021-02-02
 title: Kostenloses Oracle Cloud Free Tier nutzen
 weight: 10
 ---
