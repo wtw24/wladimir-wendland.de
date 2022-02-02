@@ -23,21 +23,12 @@ jobs:
       - name: Build
         run: hugo --gc --minify
 
-      - name: Make ping
-        env:
-          USER: ${{ secrets.DEPLOY_USER }}
-          HOST: ${{ secrets.DEPLOY_HOST }}
-          PORT: ${{ secrets.DEPLOY_PORT }}
-          PATH: ${{ secrets.DEPLOY_PATH }}
-          BUILD_NUMBER: ${GITHUB_RUN_NUMBER}
-        run: make ping && make --version
-
       - name: Create build folder
         env:
-          USER: ${{ secrets.DEPLOY_USER }}
-          HOST: ${{ secrets.DEPLOY_HOST }}
-          PORT: ${{ secrets.DEPLOY_PORT }}
-          PATH: ${{ secrets.DEPLOY_PATH }}
+          DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+          DEPLOY_PORT: ${{ secrets.DEPLOY_PORT }}
+          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
           BUILD_NUMBER: ${GITHUB_RUN_NUMBER}
         run: |
           ls -lah
@@ -57,17 +48,17 @@ jobs:
       - name: Create a symbolic link to deployed
         run: make link-to-deployed
         env:
-          USER: ${{ secrets.DEPLOY_USER }}
-          HOST: ${{ secrets.DEPLOY_HOST }}
-          PORT: ${{ secrets.DEPLOY_PORT }}
-          PATH: ${{ secrets.DEPLOY_PATH }}
+          DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+          DEPLOY_PORT: ${{ secrets.DEPLOY_PORT }}
+          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
           BUILD_NUMBER: ${GITHUB_RUN_NUMBER}
 
       - name: Clear previous build folders that are over 1 day old
         run: make clear-previous-build-folders
         env:
-          USER: ${{ secrets.DEPLOY_USER }}
-          HOST: ${{ secrets.DEPLOY_HOST }}
-          PORT: ${{ secrets.DEPLOY_PORT }}
-          PATH: ${{ secrets.DEPLOY_PATH }}
+          DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+          DEPLOY_PORT: ${{ secrets.DEPLOY_PORT }}
+          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
           BUILD_NUMBER: ${GITHUB_RUN_NUMBER}
