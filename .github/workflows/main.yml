@@ -1,0 +1,62 @@
+name: Deploy to Production Server
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.92.1'
+          extended: true
+
+      - name: Build
+        run: hugo --gc --minify
+
+      - name: Create target dir
+        run: make create-build-folder
+        env:
+          USER: ${{ secrets.DEPLOY_USER }}
+          HOST: ${{ secrets.DEPLOY_HOST }}
+          PORT: ${{ secrets.DEPLOY_PORT }}
+          PATH: ${{ secrets.DEPLOY_PATH }}
+          BUILD_NUMBER: ${GITHUB_RUN_NUMBER}
+
+      - name: Rsync deployments
+        uses: burnett01/rsync-deployments@5.2
+        with:
+          switches: --verbose --archive --compress --delete -O
+          path: public/
+          remote_path: ${{ secrets.DEPLOY_PATH }}/${GITHUB_RUN_NUMBER}
+          remote_host: ${{ secrets.DEPLOY_HOST }}
+          remote_port: ${{ secrets.DEPLOY_PORT }}
+          remote_user: ${{ secrets.DEPLOY_USER }}
+          remote_key: ${{ secrets.DEPLOY_KEY }}
+
+      - name: Create a symbolic link to deployed
+        run: make link-to-deployed
+        env:
+          USER: ${{ secrets.DEPLOY_USER }}
+          HOST: ${{ secrets.DEPLOY_HOST }}
+          PORT: ${{ secrets.DEPLOY_PORT }}
+          PATH: ${{ secrets.DEPLOY_PATH }}
+          BUILD_NUMBER: ${GITHUB_RUN_NUMBER}
+
+      - name: Clear previous build folders that are over 1 day old
+        run: make clear-previous-build-folders
+        env:
+          USER: ${{ secrets.DEPLOY_USER }}
+          HOST: ${{ secrets.DEPLOY_HOST }}
+          PORT: ${{ secrets.DEPLOY_PORT }}
+          PATH: ${{ secrets.DEPLOY_PATH }}
+          BUILD_NUMBER: ${GITHUB_RUN_NUMBER}
