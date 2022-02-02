@@ -28,39 +28,8 @@ jobs:
       - name: Build
         run: hugo --gc --minify
 
-      - name: Create build folder
-        env:
-          DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
-          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
-          DEPLOY_PORT: ${{ secrets.DEPLOY_PORT }}
-          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
-          BUILD_NUMBER: ${GITHUB_RUN_NUMBER}
-        run: |
-          ls -lah
-          make create
-
-      - name: Rsync deployments
-        uses: burnett01/rsync-deployments@5.2
-        with:
-          switches: --verbose --archive --compress --delete -O
-          path: public/
-          remote_path: ${{ secrets.DEPLOY_PATH }}/${GITHUB_RUN_NUMBER}
-          remote_host: ${{ secrets.DEPLOY_HOST }}
-          remote_port: ${{ secrets.DEPLOY_PORT }}
-          remote_user: ${{ secrets.DEPLOY_USER }}
-          remote_key: ${{ secrets.DEPLOY_KEY }}
-
-      - name: Create a symbolic link to deployed
-        run: make link-to-deployed
-        env:
-          DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
-          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
-          DEPLOY_PORT: ${{ secrets.DEPLOY_PORT }}
-          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
-          BUILD_NUMBER: ${GITHUB_RUN_NUMBER}
-
-      - name: Clear previous build folders that are over 1 day old
-        run: make clear-previous-build-folders
+      - name: Deploy
+        run: make deploy
         env:
           DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
           DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
