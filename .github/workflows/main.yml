@@ -26,6 +26,8 @@ jobs:
       - name: Make ping
         env:
           TEST: 'test_String'
+          PORT: ${{ secrets.DEPLOY_PORT }}
+          BUILD_NUMBER: ${GITHUB_RUN_NUMBER}
         run: make ping && make --version
 
       - name: Create build folder
@@ -34,7 +36,7 @@ jobs:
           HOST: ${{ secrets.DEPLOY_HOST }}
           PORT: ${{ secrets.DEPLOY_PORT }}
           PATH: ${{ secrets.DEPLOY_PATH }}
-          BUILD_NUMBER: 1
+          BUILD_NUMBER: ${GITHUB_RUN_NUMBER}
         run: |
           ls -lah
           make create
