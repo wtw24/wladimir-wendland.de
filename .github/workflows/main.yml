@@ -24,7 +24,7 @@ jobs:
         run: hugo --gc --minify
 
       - name: Install make
-        run: apt update && apt install make
+        run: ls -lah && whereis make
 
       - name: Create target dir
         run: make create-build-folder
