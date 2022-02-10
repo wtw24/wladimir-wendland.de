@@ -52,11 +52,45 @@
 .markdown h2 {
   font-weight: 500;
   font-size: 1.7em;
-  text-decoration: underline;
 }
 
 .markdown h3 {
   font-size: 1.3em;
+}
+
+.latest_posts li {
+  margin-bottom: 1.5em;
+}
+
+.post-title {
+  font-weight: 500;
+  font-size: 1.7em;
+}
+
+.post_info,
+.post_info a {
+  color: #666;
+}
+
+.post_info {
+  margin-top: 6px;
+}
+
+.post_info .tags {
+  margin-left: 10px;
+}
+
+.post_info .tags a {
+  padding: 0.25em 0.4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+  color: #fff;
+  background-color: #6c757d;
 }
 
 // @import "plugins/numbered";

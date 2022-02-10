@@ -1,7 +1,6 @@
 ---
 title: "Docker Cheat Sheet"
-weight: 10
-categories: ["docker"]
+date: 2022-02-06
 tags: ["docker"]
 ---
 

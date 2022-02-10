@@ -1,7 +1,6 @@
 ---
 title: "GRUB"
-weight: 20
-categories: ["linux"]
+date: 2022-02-06
 tags: ["linux", "grub"]
 ---
 

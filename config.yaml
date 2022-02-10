@@ -5,7 +5,7 @@ theme: "hugo-book"
 
 # Book configuration
 disablePathToLower: true
-enableGitInfo: true
+#enableGitInfo: true
 
 # Multi-lingual mode config
 # There are different options to translate files

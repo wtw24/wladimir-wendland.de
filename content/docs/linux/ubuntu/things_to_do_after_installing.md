@@ -1,7 +1,6 @@
 ---
 title: "Things to Do After Installing Ubuntu GNOME 20.04 LTS (Focal Fossa)"
-weight: 10
-categories: ["Ubuntu"]
+date: 2022-01-30
 tags: ["linux", "ubuntu"]
 ---
 

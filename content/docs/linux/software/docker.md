@@ -1,11 +1,10 @@
 ---
-title: "Docker and Docker Compose"
-weight: 20
-categories: ["software"]
+title: "Docker and Docker Compose Installation"
+date: 2022-01-30
 tags: ["docker", "docker compose", "software", "linux"]
 ---
 
-# Install Docker and Docker Compose
+# Install Docker and Docker Compose Installation
 
 - https://docs.docker.com/engine/install/ubuntu/
 - https://docs.docker.com/engine/install/linux-postinstall/

@@ -1,8 +1,6 @@
 ---
 title: "Enpass - Offline Password Manager"
-date: 2014-09-28
-weight: 10
-categories: ["software"]
+date: 2022-01-30
 tags: ["password manager", "software", "linux"]
 ---
 
