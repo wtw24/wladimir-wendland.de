@@ -1,3 +1,10 @@
+---
+title: "Docker Cheat Sheet"
+weight: 10
+categories: ["docker"]
+tags: ["docker"]
+---
+
 # Docker Cheat Sheet
 
 ## Cheatsheet for Docker CLI
