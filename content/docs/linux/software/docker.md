@@ -1,7 +1,7 @@
 ---
 title: "Docker and Docker Compose Installation"
 date: 2022-01-30
-tags: ["docker", "docker compose", "software", "linux"]
+tags: ["docker", "docker compose", "software"]
 ---
 
 # Install Docker and Docker Compose Installation

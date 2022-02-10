@@ -1,7 +1,7 @@
 ---
 title: "Enpass - Offline Password Manager"
 date: 2022-01-30
-tags: ["password manager", "software", "linux"]
+tags: ["password manager", "software"]
 ---
 
 # Enpass: Password Manager
