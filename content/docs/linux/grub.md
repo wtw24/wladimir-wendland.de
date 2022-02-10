@@ -5,7 +5,9 @@ categories: ["linux"]
 tags: ["linux", "grub"]
 ---
 
-# GRUB Rescue
+# GRUB
+
+## GRUB Rescue
 ~~~
 grub rescue> ls
 grub rescue> ls (hd0,msdos*)/boot/grub/
@@ -21,3 +23,6 @@ After boot write the command:
 sudo update-grub
 sudo grub-install /dev/sd_
 ~~~
+
+## US-English Keyboard Layout
+![fritzvpn-settings](/img/US-English.webp)
