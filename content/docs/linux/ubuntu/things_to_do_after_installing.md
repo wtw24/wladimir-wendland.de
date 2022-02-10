@@ -8,14 +8,12 @@ tags: ["linux", "ubuntu"]
 # Things to Do After Installing Ubuntu GNOME 20.04 LTS (Focal Fossa)
 
 
----
 ## Check and Install Package Updates
 ~~~shell
 sudo apt update && sudo apt list --upgradable && sudo apt upgrade
 ~~~
 
 
----
 ## Add create 'New Document' option to Nautilus FileManager
 ~~~shell
 XDG_TEMPLATES_DIR=$(xdg-user-dir TEMPLATES) && cd "$XDG_TEMPLATES_DIR"
@@ -23,7 +21,6 @@ touch 'New Text File.txt' && touch 'New Markdown File.md'
 ~~~
 
 
----
 ## Install GNOME Sushi
 
 GNOME sushi - erweiterte Dateivorschau für Nautilus.
@@ -32,7 +29,6 @@ sudo apt install gnome-sushi
 ~~~
 
 
----
 ## Install Z-shell (Oh My Zsh)
 ~~~shell
 sudo apt install zsh powerline fonts-powerline
@@ -67,7 +63,6 @@ DISABLE_MAGIC_FUNCTIONS=true
 ~~~
 
 
----
 ## Terminal themes:
 - https://mayccoll.github.io/Gogh/
 
@@ -80,7 +75,6 @@ bash -c  "$(wget -qO- https://git.io/vQgMr)"
 - Afterglow (06)
 
 
----
 ## QT Applications Style
 ~~~shell
 sudo apt install -y qt5-style-plugins
@@ -88,31 +82,26 @@ echo "export QT_QPA_PLATFORMTHEME=gtk2" >> ~/.profile
 ~~~
 
 
----
 ## System Tuning
 ~~~shell
 sudo apt install gnome-system-tools dconf-editor gnome-tweaks chrome-gnome-shell gnome-tweak-tool
 ~~~
 
 
----
 ## Installing additional support for archivers
 ~~~sh
 sudo apt install p7zip-rar rar unrar unace arj cabextract
 ~~~
 
 
----
 ## Install Google Chrome
 - https://www.google.com/intl/de/chrome/
 
 
----
 ## Install Visual Studio Code	
 - https://code.visualstudio.com/download
 
 
----
 # My Software and Tools
 ~~~shell
 sudo apt install \
@@ -129,7 +118,6 @@ sudo apt install \
   htop
 ~~~
 
----
 ## Install Gnome Extensions
 - **Dash to Panel**		 
   - https://extensions.gnome.org/extension/1160/dash-to-panel
@@ -144,8 +132,7 @@ sudo apt install \
 - **User Themes**
   - https://extensions.gnome.org/extension/19/user-themes
 
-
----
+  
 ## Synaptic
 - http://help.ubuntu.ru/wiki/synaptic
 
@@ -159,7 +146,6 @@ sudo apt-get install apt-xapian-index && sudo update-apt-xapian-index -vf
 ~~~
 
 
----
 ## Custom Hot Keys
 
 **Task Manager**
@@ -252,7 +238,6 @@ xdotool search -class gnome-terminal windowactivate %@
 ~~~
 
 
----
 ## Fonts
 
 ### Fonts Dirs
@@ -283,14 +268,12 @@ sudo fc-cache -fv
 ~~~
 
 
----
 ## Fix NTFS
 ~~~shell
 sudo ntfsfix /dev/sda1
 ~~~
 
 
----
 ## How to disable Ctrl+Shift+U?
 
 **Problem**
@@ -314,7 +297,6 @@ ibus-setup
 - Close the IBus Preferences window.
 
 
----
 ## Boot repair
 ~~~sh
 sudo add-apt-repository ppa:yannubuntu/boot-repair
@@ -324,7 +306,6 @@ boot-repair
 ~~~
 
 
----
 ## Install OpenVPN plugin
 ~~~shell
 sudo apt install network-manager-openvpn-gnome openvpn-systemd-resolved
@@ -343,14 +324,12 @@ You have to choose **“Cisco-compatible VPN-client (vpnc)“**!
 ![fritzvpn-settings](/img/fritzvpn-settings.png)
 
 
----
 ## Install Media Codecs
 ~~~shell
 sudo apt install ubuntu-restricted-extras
 ~~~
 
 
----
 ## Enable the Canonical Partners Repository
 
 The **Canonical Partner** repository offers some proprietary applications such as **Adobe Flash Plugin**, 
@@ -358,7 +337,6 @@ that are closed-source but don’t cost any money to use.
 To enable it, open **Software & Updates**, once it launches, click on the **Other Software** tab.
 
 
----
 ## Change background to solid color
 
 To clear the current image setting:
