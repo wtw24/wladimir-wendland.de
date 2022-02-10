@@ -2,6 +2,7 @@
 author: "Wladimir Wendland"
 date: 2022-02-05
 title: Kostenloses Oracle Cloud Free Tier nutzen
+tags: ["cloud", "docker", "kostenlos"]
 ---
 
 Wer sich bei Oracle für Cloud Free Tier registriert, kann in der Oracle-Cloud kostenlos verschiedene Ressourcen verwenden.

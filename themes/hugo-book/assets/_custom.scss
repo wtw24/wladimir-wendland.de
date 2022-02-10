@@ -80,7 +80,7 @@
   margin-left: 10px;
 }
 
-.post_info .tags a {
+.tags a {
   padding: 0.25em 0.4em;
   font-size: 75%;
   font-weight: 700;
@@ -91,6 +91,16 @@
   border-radius: 0.25rem;
   color: #fff;
   background-color: #6c757d;
+}
+
+.footer-date {
+  font-weight: bolder;
+}
+
+.post-tags {
+  padding-bottom: 0.7em;
+  border-bottom: 1px solid #efefef;
+  margin-bottom: 1.5em;
 }
 
 // @import "plugins/numbered";
