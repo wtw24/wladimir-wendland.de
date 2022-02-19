@@ -13,10 +13,20 @@ sudo apt update && sudo apt list --upgradable && sudo apt upgrade
 ~~~
 
 
-## Add create 'New Document' option to Nautilus FileManager
+# My Software and Tools
 ~~~shell
-XDG_TEMPLATES_DIR=$(xdg-user-dir TEMPLATES) && cd "$XDG_TEMPLATES_DIR"
-touch 'New Text File.txt' && touch 'New Markdown File.md'
+sudo apt install \
+  nano \
+  git \
+  wget \
+  curl \
+  mc \
+  copyq \
+  filezilla \
+  neofetch \
+  remmina \
+  inxi \
+  htop
 ~~~
 
 
@@ -28,16 +38,28 @@ sudo apt install gnome-sushi
 ~~~
 
 
+## Add create 'New Document' option to Nautilus FileManager
+~~~shell
+XDG_TEMPLATES_DIR=$(xdg-user-dir TEMPLATES) && cd "$XDG_TEMPLATES_DIR"
+touch 'New Text File.txt' && touch 'New Markdown File.md'
+~~~
+
+
 ## Install Z-shell (Oh My Zsh)
 ~~~shell
 sudo apt install zsh powerline fonts-powerline
+~~~
 
+~~~shell
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ~~~
 
 ### Install plugins:
 ~~~shell
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+~~~
+
+~~~shell
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ~~~
 
@@ -77,6 +99,9 @@ bash -c  "$(wget -qO- https://git.io/vQgMr)"
 ## QT Applications Style
 ~~~shell
 sudo apt install -y qt5-style-plugins
+~~~
+
+~~~shell
 echo "export QT_QPA_PLATFORMTHEME=gtk2" >> ~/.profile
 ~~~
 
@@ -100,22 +125,6 @@ sudo apt install p7zip-rar rar unrar unace arj cabextract
 ## Install Visual Studio Code	
 - https://code.visualstudio.com/download
 
-
-# My Software and Tools
-~~~shell
-sudo apt install \
-  nano \
-  git \
-  wget \
-  curl \
-  mc \
-  copyq \
-  filezilla \
-  neofetch \
-  remmina \
-  inxi \
-  htop
-~~~
 
 ## Install Gnome Extensions
 - **Dash to Panel**		 
@@ -216,7 +225,9 @@ gnome-screenshot -a -f ~/Pictures/Screenshots/Screenshot-$DATE.png
 ### Terminal Hot Keys
 ~~~shell
 sudo apt-get install wmctrl xdotool
+~~~
 
+~~~shell
 # xdotool search --class "$program" windowactivate %@
 # xdotool search --name "$program" windowactivate %@
 ~~~
@@ -256,7 +267,9 @@ sudo apt-get install ttf-mscorefonts-installer
 ### Manually Install Fonts
 ~~~shell
 sudo mkdir -p /usr/local/share/fonts/my_fonts
+~~~
 
+~~~shell
 sudo cp *.ttf /usr/local/share/fonts/my_fonts
 
 sudo chown root:staff /usr/local/share/fonts/my_fonts -R
