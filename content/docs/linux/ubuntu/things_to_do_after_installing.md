@@ -416,3 +416,20 @@ Add the Flathub repository
 ~~~shell
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ~~~
+
+### Obsidian - Markdown-based knowledge base
+
+~~~shell
+flatpak install flathub md.obsidian.Obsidian
+~~~
+
+### Telegram Desktop
+
+~~~shell
+flatpak install flathub org.telegram.desktop
+~~~
+
+### ONLYOFFICE Desktop Editors
+~~~shell
+flatpak install flathub org.onlyoffice.desktopeditors
+~~~
