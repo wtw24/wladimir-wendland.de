@@ -111,7 +111,7 @@ echo "export QT_QPA_PLATFORMTHEME=gtk2" >> ~/.profile
 
 ## System Tuning
 ~~~shell
-sudo apt install gnome-system-tools dconf-editor gnome-tweaks chrome-gnome-shell gnome-tweak-tool
+sudo apt install gnome-system-tools dconf-editor gnome-tweaks chrome-gnome-shell gnome-shell-extensions
 ~~~
 
 
