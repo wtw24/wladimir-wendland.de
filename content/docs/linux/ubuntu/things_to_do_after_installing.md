@@ -271,11 +271,21 @@ sudo mkdir -p /usr/local/share/fonts/my_fonts
 
 ~~~shell
 sudo cp *.ttf /usr/local/share/fonts/my_fonts
+~~~
 
+~~~shell
 sudo chown root:staff /usr/local/share/fonts/my_fonts -R
-sudo chmod 644 /usr/local/share/fonts/my_fonts/* -R
-sudo chmod 755 /usr/local/share/fonts/my_fonts
+~~~
 
+~~~shell
+sudo chmod 644 /usr/local/share/fonts/my_fonts/* -R
+~~~
+
+~~~shell
+sudo chmod 755 /usr/local/share/fonts/my_fonts
+~~~
+
+~~~shell
 sudo fc-cache -fv
 ~~~
 
