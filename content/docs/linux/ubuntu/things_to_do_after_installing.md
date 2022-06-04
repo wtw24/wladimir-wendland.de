@@ -41,6 +41,9 @@ sudo apt install gnome-sushi
 ## Add create 'New Document' option to Nautilus FileManager
 ~~~shell
 XDG_TEMPLATES_DIR=$(xdg-user-dir TEMPLATES) && cd "$XDG_TEMPLATES_DIR"
+~~~
+
+~~~shell
 touch 'New Text File.txt' && touch 'New Markdown File.md'
 ~~~
 
