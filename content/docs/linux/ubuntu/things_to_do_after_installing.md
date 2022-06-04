@@ -387,7 +387,7 @@ git config --global core.excludesFile '~/.gitignore'
 ~~~
 
 
-## scale GRUB menu on 4K displays
+## Scale GRUB menu on 4K displays
 
 ~~~shell
 sudo nano /etc/default/grub
