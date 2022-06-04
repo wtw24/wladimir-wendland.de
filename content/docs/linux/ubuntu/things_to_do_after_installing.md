@@ -430,6 +430,13 @@ flatpak install flathub org.telegram.desktop
 ~~~
 
 ### ONLYOFFICE Desktop Editors
+
 ~~~shell
 flatpak install flathub org.onlyoffice.desktopeditors
+~~~
+
+### Skype
+
+~~~shell
+flatpak install flathub com.skype.Client
 ~~~
