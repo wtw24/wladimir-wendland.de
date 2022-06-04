@@ -403,3 +403,16 @@ GRUB_TERMINAL=gfxterm
 ~~~shell
 sudo update-grub
 ~~~
+
+
+## Install Flatpak
+
+~~~shell
+sudo apt install flatpak
+~~~
+
+Add the Flathub repository
+
+~~~shell
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+~~~
