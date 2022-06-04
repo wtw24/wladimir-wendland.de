@@ -374,6 +374,7 @@ To set the primary color (the first color in a gradient or the solid color):
 gsettings set org.gnome.desktop.background primary-color '#232f3e'
 ~~~
 
+
 ## Global Git ignore
 
 ~~~shell
@@ -383,4 +384,22 @@ git config --global core.excludesFile '~/.gitignore'
 .gitignore
 ~~~
 .idea
+~~~
+
+
+## scale GRUB menu on 4K displays
+
+~~~shell
+sudo nano /etc/default/grub
+~~~
+
+add
+~~~
+GRUB_GFXMODE=800x600
+GRUB_GFXPAYLOAD=keep
+GRUB_TERMINAL=gfxterm
+~~~
+
+~~~shell
+sudo update-grub
 ~~~
