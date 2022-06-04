@@ -15,6 +15,9 @@ Offline Password Manager and Secure Vault. Saves and fill in all your passwords.
 ### To install Enpass, add a new repository to `/etc/apt/sources.list`:
 ~~~shell
 sudo -i
+~~~
+
+~~~shell
 echo "deb https://apt.enpass.io/ stable main" > /etc/apt/sources.list.d/enpass.list
 ~~~
 
@@ -26,5 +29,8 @@ wget -O - https://apt.enpass.io/keys/enpass-linux.key | tee /etc/apt/trusted.gpg
 ### After that, you can install Enpass as any other software package:
 ~~~shell
 apt update && apt install enpass
+~~~
+
+~~~shell
 exit
 ~~~
