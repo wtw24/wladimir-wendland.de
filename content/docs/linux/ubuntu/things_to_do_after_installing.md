@@ -373,3 +373,14 @@ To set the primary color (the first color in a gradient or the solid color):
 ~~~shell
 gsettings set org.gnome.desktop.background primary-color '#232f3e'
 ~~~
+
+## Global Git ignore
+
+~~~shell
+git config --global core.excludesFile '~/.gitignore'
+~~~
+
+.gitignore
+~~~
+.idea
+~~~
