@@ -11,6 +11,9 @@ tags: ["linux", "ubuntu"]
 ~~~shell
 sudo apt update && sudo apt list --upgradable && sudo apt upgrade
 ~~~
+~~~shell
+sudo apt update && sudo apt list --upgradable && sudo apt upgrade && sudo apt autoremove
+~~~
 
 
 # My Software and Tools
