@@ -9,10 +9,10 @@ tags: ["linux", "ubuntu"]
 
 ## Check and Install Package Updates
 ~~~shell
-sudo apt update && sudo apt list --upgradable && sudo apt upgrade
+sudo apt update && sudo apt list --upgradable
 ~~~
 ~~~shell
-sudo apt update && sudo apt list --upgradable && sudo apt upgrade && sudo apt autoremove
+sudo apt update && sudo apt list --upgradable && sudo apt autoremove
 ~~~
 
 
