@@ -9,10 +9,11 @@ tags: ["linux", "ubuntu"]
 
 ## Check and Install Package Updates
 ~~~shell
-sudo apt update && sudo apt list --upgradable
+sudo apt update && sudo apt list --upgradable && sudo apt upgrade
 ~~~
+
 ~~~shell
-sudo apt update && sudo apt list --upgradable && sudo apt autoremove
+sudo apt update && sudo apt list --upgradable && sudo apt upgrade && sudo apt autoremove
 ~~~
 
 
@@ -379,7 +380,6 @@ gsettings set org.gnome.desktop.background primary-color '#232f3e'
 
 
 ## Global Git ignore
-
 ~~~shell
 git config --global core.excludesFile '~/.gitignore'
 ~~~
@@ -391,7 +391,6 @@ git config --global core.excludesFile '~/.gitignore'
 
 
 ## Scale GRUB menu on 4K displays
-
 ~~~shell
 sudo nano /etc/default/grub
 ~~~
@@ -409,37 +408,31 @@ sudo update-grub
 
 
 ## Install Flatpak
-
 ~~~shell
 sudo apt install flatpak
 ~~~
 
 Add the Flathub repository
-
 ~~~shell
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ~~~
 
 ### Obsidian - Markdown-based knowledge base
-
 ~~~shell
 flatpak install flathub md.obsidian.Obsidian
 ~~~
 
 ### Telegram Desktop
-
 ~~~shell
 flatpak install flathub org.telegram.desktop
 ~~~
 
 ### ONLYOFFICE Desktop Editors
-
 ~~~shell
 flatpak install flathub org.onlyoffice.desktopeditors
 ~~~
 
 ### Skype
-
 ~~~shell
 flatpak install flathub com.skype.Client
 ~~~
