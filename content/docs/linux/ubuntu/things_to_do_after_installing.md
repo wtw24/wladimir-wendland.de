@@ -1,5 +1,5 @@
 ---
-title: "Things to Do After Installing Ubuntu GNOME 20.04 LTS (Focal Fossa)"
+title: "Things to Do After Installing Ubuntu GNOME 20.04/22.04 LTS (Focal Fossa)"
 date: 2022-01-30
 tags: ["linux", "ubuntu"]
 ---
@@ -384,7 +384,10 @@ gsettings set org.gnome.desktop.background primary-color '#232f3e'
 git config --global core.excludesFile '~/.gitignore'
 ~~~
 
-.gitignore
+~~~shell
+make ~/.gitignore
+~~~
+
 ~~~
 .idea
 ~~~
@@ -395,7 +398,7 @@ git config --global core.excludesFile '~/.gitignore'
 sudo nano /etc/default/grub
 ~~~
 
-add
+add:
 ~~~
 GRUB_GFXMODE=800x600
 GRUB_GFXPAYLOAD=keep
