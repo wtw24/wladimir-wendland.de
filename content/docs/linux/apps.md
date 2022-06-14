@@ -101,3 +101,38 @@ Audio conversion tool that supports almost all file formats
 ~~~shell
 flatpak install flathub org.soundconverter.SoundConverter
 ~~~
+
+
+## qBittorrent
+
+An open-source Bittorrent client
+
+- https://flathub.org/apps/details/org.qbittorrent.qBittorrent
+
+**Install:**
+~~~shell
+flatpak install flathub org.qbittorrent.qBittorrent
+~~~
+
+
+## ClamAV/ClamTk
+
+ClamAV is an open-source and cross-platform command-line antivirus app for detecting Trojans, viruses, and other malicious codes. ClamTk is its GUI front-end
+
+**Install:**
+~~~shell
+sudo apt install clamav clamtk
+~~~
+
+### Update virus databases
+~~~shell
+sudo systemctl stop clamav-freshclam
+~~~
+
+~~~shell
+sudo freshclam
+~~~
+
+~~~shell
+sudo systemctl start clamav-freshclam
+~~~
