@@ -1,6 +1,6 @@
 ---
 title: "Apt"
-date: 2022-06-06
+date: 2022-06-14
 tags: ["linux", "apt"]
 ---
 

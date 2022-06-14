@@ -1,6 +1,6 @@
 ---
 title: "Flatpak"
-date: 2022-02-06
+date: 2022-06-14
 tags: ["linux", "flatpak"]
 ---
 

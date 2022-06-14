@@ -4,7 +4,7 @@ date: 2022-01-30
 tags: ["linux", "ubuntu"]
 ---
 
-# Things to Do After Installing Ubuntu GNOME 20.04 LTS (Focal Fossa)
+# Things to Do After Installing Ubuntu GNOME 20.04/22.04 LTS (Focal Fossa)
 
 
 ## Check and Install Package Updates
