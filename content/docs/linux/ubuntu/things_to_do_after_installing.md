@@ -17,7 +17,7 @@ sudo apt update && sudo apt list --upgradable && sudo apt upgrade && sudo apt au
 ~~~
 
 
-# My Software and Tools
+## My Software and Tools
 ~~~shell
 sudo apt install \
   nano \
@@ -36,8 +36,8 @@ sudo apt install \
 
 ## Install GNOME Sushi
 
-GNOME sushi - erweiterte Dateivorschau für Nautilus.
-~~~sh
+### GNOME sushi - erweiterte Dateivorschau für Nautilus.
+~~~shell
 sudo apt install gnome-sushi
 ~~~
 
