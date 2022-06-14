@@ -179,6 +179,17 @@ sudo systemctl start clamav-freshclam
 ~~~
 
 
+## ClamTk
+
+Easy to use graphical user interface for Clam Antivirus (ClamAV)
+
+- https://flathub.org/apps/details/com.gitlab.davem.ClamTk
+
+~~~shell
+flatpak install flathub com.gitlab.davem.ClamTk
+~~~
+
+
 ## Postman
 
 Postman is a complete API development environment
