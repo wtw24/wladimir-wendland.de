@@ -17,9 +17,14 @@ grub rescue> insmod normal
 grub rescue> normal
 ~~~
 
+![fritzvpn-settings](/img/grub.jpg)
+
 After boot write the command:
 ~~~shell
 sudo update-grub
+~~~
+
+~~~shell
 sudo grub-install /dev/sd_
 ~~~
 
