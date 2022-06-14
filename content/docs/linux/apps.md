@@ -81,3 +81,23 @@ View and clean metadata in files
 ~~~shell
 flatpak install flathub fr.romainvigier.MetadataCleaner
 ~~~
+
+
+## Stacer
+
+System optimizer and task manager
+
+- https://github.com/oguzhaninan/Stacer
+
+
+## SoundConverter
+
+Audio conversion tool that supports almost all file formats
+
+- https://soundconverter.org/
+- https://flathub.org/apps/details/org.soundconverter.SoundConverter
+
+**Install:**
+~~~shell
+flatpak install flathub org.soundconverter.SoundConverter
+~~~
