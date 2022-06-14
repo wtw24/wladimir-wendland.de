@@ -89,6 +89,11 @@ System optimizer and task manager
 
 - https://github.com/oguzhaninan/Stacer
 
+**Install:**
+~~~shell
+sudo apt install clamav stacer
+~~~
+
 
 ## SoundConverter
 
