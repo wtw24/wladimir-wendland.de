@@ -6,6 +6,19 @@ tags: ["linux", "apps"]
 
 # Apps
 
+
+## Flatseal
+
+Manage Flatpak permissions
+
+- https://flathub.org/apps/details/com.github.tchx84.Flatseal
+
+**Install:**
+~~~shell
+flatpak install flathub com.github.tchx84.Flatseal
+~~~
+
+
 ## ONLYOFFICE Desktop Editors
 
 Office productivity suite 
@@ -46,6 +59,17 @@ Edit screenshots or memes
 flatpak install flathub com.github.maoschanz.drawing
 ~~~
 
+
+## draw.io
+
+Create and share diagrams
+
+- https://flathub.org/apps/details/com.jgraph.drawio.desktop
+
+**Install:**
+~~~shell
+flatpak install flathub com.jgraph.drawio.desktop
+~~~
 
 ## Pitivi
 
@@ -108,6 +132,18 @@ flatpak install flathub org.soundconverter.SoundConverter
 ~~~
 
 
+## fre:ac
+
+Audio converter and CD ripper
+
+- https://flathub.org/apps/details/org.freac.freac
+
+**Install:**
+~~~shell
+flatpak install flathub org.freac.freac
+~~~
+
+
 ## qBittorrent
 
 An open-source Bittorrent client
@@ -140,4 +176,147 @@ sudo freshclam
 
 ~~~shell
 sudo systemctl start clamav-freshclam
+~~~
+
+
+## Postman
+
+Postman is a complete API development environment
+
+- https://flathub.org/apps/details/com.getpostman.Postman
+
+**Install:**
+~~~shell
+flatpak install flathub com.getpostman.Postman
+~~~
+
+
+## Foliate
+
+A simple and modern eBook viewer
+
+- https://flathub.org/apps/details/com.github.johnfactotum.Foliate
+
+**Install:**
+~~~shell
+flatpak install flathub com.github.johnfactotum.Foliate
+~~~
+
+
+## Telegram Desktop
+
+Fast. Secure. Powerful.
+
+- https://flathub.org/apps/details/org.telegram.desktop
+
+**Install:**
+~~~shell
+flatpak install flathub org.telegram.desktop
+~~~
+
+
+## Skype
+
+Call and message skype users, with video chat support
+
+- https://flathub.org/apps/details/com.skype.Client
+
+**Install:**
+~~~shell
+flatpak install flathub com.skype.Client
+~~~
+
+
+## Feeds
+
+News reader for GNOME
+
+- https://flathub.org/apps/details/org.gabmus.gfeeds
+
+**Install:**
+~~~shell
+flatpak install flathub org.gabmus.gfeeds
+~~~
+
+
+## Obsidian
+
+Markdown-based knowledge base
+
+- https://flathub.org/apps/details/md.obsidian.Obsidian
+
+**Install:**
+~~~shell
+flatpak install flathub md.obsidian.Obsidian
+~~~
+
+
+## Zim
+
+Write notes in a desktop wiki
+
+- https://flathub.org/apps/details/org.zim_wiki.Zim
+
+**Install:**
+~~~shell
+flatpak install flathub org.zim_wiki.Zim
+~~~
+
+
+## Getting Things GNOME!
+
+Personal tasks and TODO-list items organizer
+
+- https://flathub.org/apps/details/org.gnome.GTG
+
+**Install:**
+~~~shell
+flatpak install flathub org.gnome.GTG
+~~~
+
+
+## Font Downloader
+
+Install fonts from online sources
+
+- https://flathub.org/apps/details/org.gustavoperedo.FontDownloader
+
+**Install:**
+~~~shell
+flatpak install flathub org.gustavoperedo.FontDownloader
+~~~
+
+
+## Okular
+
+Document Viewer
+
+- https://flathub.org/apps/details/org.kde.okular
+
+**Install:**
+~~~shell
+flatpak install flathub org.kde.okular
+~~~
+
+
+## VLC
+
+VLC media player, the open-source multimedia player
+
+- https://flathub.org/apps/details/org.videolan.VLC
+
+**Install:**
+~~~shell
+flatpak install flathub org.videolan.VLC
+~~~
+
+
+## Krita
+
+Digital Painting, Creative Freedom
+
+- https://flathub.org/apps/details/org.kde.krita
+
+~~~shell
+flatpak install flathub org.kde.krita
 ~~~
