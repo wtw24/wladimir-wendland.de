@@ -7,6 +7,12 @@ tags: ["linux", "apps"]
 # Apps
 
 
+## System Profiler and Benchmark
+~~~shell
+sudo apt install hardinfo
+~~~
+
+
 ## Flatseal
 
 Manage Flatpak permissions
