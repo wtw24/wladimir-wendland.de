@@ -19,7 +19,6 @@ Manage Flatpak permissions
 
 - https://flathub.org/apps/details/com.github.tchx84.Flatseal
 
-**Install:**
 ~~~shell
 flatpak install flathub com.github.tchx84.Flatseal
 ~~~
@@ -31,7 +30,6 @@ Office productivity suite
 
 - https://flathub.org/apps/details/org.onlyoffice.desktopeditors
 
-**Install:**
 ~~~shell
 flatpak install flathub org.onlyoffice.desktopeditors
 ~~~
@@ -43,7 +41,6 @@ Protect yourself from data loss
 
 - https://flathub.org/apps/details/org.gnome.DejaDup
 
-**Install:**
 ~~~shell
 flatpak install flathub org.gnome.DejaDup
 ~~~
@@ -60,7 +57,6 @@ Edit screenshots or memes
 
 - https://flathub.org/apps/details/com.github.maoschanz.drawing
 
-**Install:**
 ~~~shell
 flatpak install flathub com.github.maoschanz.drawing
 ~~~
@@ -72,7 +68,6 @@ Create and share diagrams
 
 - https://flathub.org/apps/details/com.jgraph.drawio.desktop
 
-**Install:**
 ~~~shell
 flatpak install flathub com.jgraph.drawio.desktop
 ~~~
@@ -83,7 +78,6 @@ iMovie for Linux
 
 - https://flathub.org/apps/details/org.pitivi.Pitivi
 
-**Install:**
 ~~~shell
 flatpak install flathub org.pitivi.Pitivi
 ~~~
@@ -95,7 +89,6 @@ Image Compression
 
 - https://flathub.org/apps/details/com.github.huluti.Curtail
 
-**Install:**
 ~~~shell
 flatpak install flathub com.github.huluti.Curtail
 ~~~
@@ -107,7 +100,6 @@ View and clean metadata in files
 
 - https://flathub.org/apps/details/fr.romainvigier.MetadataCleaner
 
-**Install:**
 ~~~shell
 flatpak install flathub fr.romainvigier.MetadataCleaner
 ~~~
@@ -119,7 +111,6 @@ System optimizer and task manager
 
 - https://github.com/oguzhaninan/Stacer
 
-**Install:**
 ~~~shell
 sudo apt install clamav stacer
 ~~~
@@ -132,7 +123,6 @@ Audio conversion tool that supports almost all file formats
 - https://soundconverter.org/
 - https://flathub.org/apps/details/org.soundconverter.SoundConverter
 
-**Install:**
 ~~~shell
 flatpak install flathub org.soundconverter.SoundConverter
 ~~~
@@ -144,7 +134,6 @@ Audio converter and CD ripper
 
 - https://flathub.org/apps/details/org.freac.freac
 
-**Install:**
 ~~~shell
 flatpak install flathub org.freac.freac
 ~~~
@@ -156,7 +145,6 @@ An open-source Bittorrent client
 
 - https://flathub.org/apps/details/org.qbittorrent.qBittorrent
 
-**Install:**
 ~~~shell
 flatpak install flathub org.qbittorrent.qBittorrent
 ~~~
@@ -166,7 +154,6 @@ flatpak install flathub org.qbittorrent.qBittorrent
 
 ClamAV is an open-source and cross-platform command-line antivirus app for detecting Trojans, viruses, and other malicious codes. ClamTk is its GUI front-end
 
-**Install:**
 ~~~shell
 sudo apt install clamav clamtk
 ~~~
@@ -202,7 +189,6 @@ Postman is a complete API development environment
 
 - https://flathub.org/apps/details/com.getpostman.Postman
 
-**Install:**
 ~~~shell
 flatpak install flathub com.getpostman.Postman
 ~~~
@@ -214,7 +200,6 @@ A simple and modern eBook viewer
 
 - https://flathub.org/apps/details/com.github.johnfactotum.Foliate
 
-**Install:**
 ~~~shell
 flatpak install flathub com.github.johnfactotum.Foliate
 ~~~
@@ -226,7 +211,6 @@ Fast. Secure. Powerful.
 
 - https://flathub.org/apps/details/org.telegram.desktop
 
-**Install:**
 ~~~shell
 flatpak install flathub org.telegram.desktop
 ~~~
@@ -238,7 +222,6 @@ Call and message skype users, with video chat support
 
 - https://flathub.org/apps/details/com.skype.Client
 
-**Install:**
 ~~~shell
 flatpak install flathub com.skype.Client
 ~~~
@@ -250,7 +233,6 @@ News reader for GNOME
 
 - https://flathub.org/apps/details/org.gabmus.gfeeds
 
-**Install:**
 ~~~shell
 flatpak install flathub org.gabmus.gfeeds
 ~~~
@@ -262,7 +244,6 @@ Markdown-based knowledge base
 
 - https://flathub.org/apps/details/md.obsidian.Obsidian
 
-**Install:**
 ~~~shell
 flatpak install flathub md.obsidian.Obsidian
 ~~~
@@ -274,7 +255,6 @@ Write notes in a desktop wiki
 
 - https://flathub.org/apps/details/org.zim_wiki.Zim
 
-**Install:**
 ~~~shell
 flatpak install flathub org.zim_wiki.Zim
 ~~~
@@ -286,7 +266,6 @@ Personal tasks and TODO-list items organizer
 
 - https://flathub.org/apps/details/org.gnome.GTG
 
-**Install:**
 ~~~shell
 flatpak install flathub org.gnome.GTG
 ~~~
@@ -298,7 +277,6 @@ Install fonts from online sources
 
 - https://flathub.org/apps/details/org.gustavoperedo.FontDownloader
 
-**Install:**
 ~~~shell
 flatpak install flathub org.gustavoperedo.FontDownloader
 ~~~
@@ -310,7 +288,6 @@ Document Viewer
 
 - https://flathub.org/apps/details/org.kde.okular
 
-**Install:**
 ~~~shell
 flatpak install flathub org.kde.okular
 ~~~
@@ -322,7 +299,6 @@ VLC media player, the open-source multimedia player
 
 - https://flathub.org/apps/details/org.videolan.VLC
 
-**Install:**
 ~~~shell
 flatpak install flathub org.videolan.VLC
 ~~~
@@ -336,4 +312,26 @@ Digital Painting, Creative Freedom
 
 ~~~shell
 flatpak install flathub org.kde.krita
+~~~
+
+
+## RawTherapee
+
+An advanced raw photo development program
+
+- https://flathub.org/apps/details/com.rawtherapee.RawTherapee
+
+~~~shell
+flatpak install flathub com.rawtherapee.RawTherapee
+~~~
+
+
+## Darktable
+
+Organize and develop images from digital cameras
+
+- https://flathub.org/apps/details/org.darktable.Darktable
+
+~~~shell
+flatpak install flathub org.darktable.Darktable
 ~~~
