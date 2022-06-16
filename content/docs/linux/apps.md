@@ -337,3 +337,25 @@ Digital Painting, Creative Freedom
 ~~~shell
 flatpak install flathub org.kde.krita
 ~~~
+
+
+## RawTherapee
+
+An advanced raw photo development program
+
+- https://flathub.org/apps/details/com.rawtherapee.RawTherapee
+
+~~~shell
+flatpak install flathub com.rawtherapee.RawTherapee
+~~~
+
+
+## Darktable
+
+Organize and develop images from digital cameras
+
+- https://flathub.org/apps/details/org.darktable.Darktable
+
+~~~shell
+flatpak install flathub org.darktable.Darktable
+~~~
