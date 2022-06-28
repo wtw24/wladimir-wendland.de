@@ -30,6 +30,7 @@ sudo apt install \
   neofetch \
   remmina \
   inxi \
+  make \
   htop
 ~~~
 
@@ -381,7 +382,11 @@ gsettings set org.gnome.desktop.background primary-color '#232f3e'
 
 ## Global Git ignore
 ~~~shell
-make ~/.gitignore
+toch ~/.gitignore
+~~~
+
+~~~shell
+nano ~/.gitignore
 ~~~
 
 ~~~

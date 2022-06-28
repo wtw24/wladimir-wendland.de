@@ -1,7 +1,7 @@
 ---
 title: "Best Linux Apps"
 date: 2022-06-14
-tags: ["linux", "apps"]
+tags: ["linux", "apps", "software", "flatpak"]
 ---
 
 # Apps

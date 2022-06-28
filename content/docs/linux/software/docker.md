@@ -23,12 +23,16 @@ sudo apt remove docker docker-engine docker.io containerd runc
 1. Update the apt package index and install packages to allow apt to use a repository over HTTPS:
 ~~~shell
 sudo apt update
+~~~
+
+~~~shell
 sudo apt install \
     ca-certificates \
     curl \
     gnupg \
     lsb-release
 ~~~
+
 2. Add Docker’s official GPG key:
 ~~~shell
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
@@ -44,6 +48,9 @@ echo \
 ### Install Docker Engine
 ~~~shell
 sudo apt update
+~~~
+
+~~~shell
 sudo apt install docker-ce docker-ce-cli containerd.io
 ~~~
 
@@ -58,22 +65,30 @@ sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> c
 ~~~shell
 sudo groupadd docker
 ~~~
+
 2. Add your user to the docker group.
 ~~~shell
 sudo usermod -aG docker $USER
 ~~~
+
 3. **Log out** and **log back** in so that your group membership is re-evaluated.
 
 
 ### Configure Docker to start on boot
 ~~~shell
 sudo systemctl enable docker.service
+~~~
+
+~~~shell
 sudo systemctl enable containerd.service
 ~~~
 
 To disable this behavior, use disable instead.
 ~~~shell
 sudo systemctl disable docker.service
+~~~
+
+~~~shell
 sudo systemctl disable containerd.service
 ~~~
 
@@ -83,9 +98,13 @@ sudo systemctl disable containerd.service
 ~~~shell
 sudo apt-get purge docker-ce docker-ce-cli containerd.io
 ~~~
+
 2. Images, containers, volumes, or customized configuration files on your host are not automatically removed. To delete all images, containers, and volumes:
 ~~~shell
 sudo rm -rf /var/lib/docker
+~~~
+
+~~~shell
 sudo rm -rf /var/lib/containerd
 ~~~
 
@@ -95,17 +114,22 @@ sudo rm -rf /var/lib/containerd
 1. Run this command to download the current stable release of Docker Compose:
 ~~~shell
 sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-# or:
+~~~
+or:
+~~~shell
 sudo curl -L "https://github.com/docker/compose/releases/download/2.2.23/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 ~~~
+
 2. Apply executable permissions to the binary:
 ~~~shell
 sudo chmod +x /usr/local/bin/docker-compose
 ~~~
+
 > **Note**: If the command docker-compose fails after installation, check your path. You can also create a symbolic link to /usr/bin or any other directory in your path.
 ~~~shell
 sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 ~~~
+
 3. Test the installation
 ~~~shell
 docker-compose --version
