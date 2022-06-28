@@ -43,6 +43,12 @@ sudo apt install gnome-sushi
 ~~~
 
 
+## Show the trash icon on the desktop
+~~~shell
+gsettings set org.gnome.shell.extensions.ding show-trash true
+~~~
+
+
 ## Add create 'New Document' option to Nautilus FileManager
 ~~~shell
 XDG_TEMPLATES_DIR=$(xdg-user-dir TEMPLATES) && cd "$XDG_TEMPLATES_DIR"
