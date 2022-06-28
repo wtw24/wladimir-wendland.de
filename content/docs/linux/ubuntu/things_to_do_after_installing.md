@@ -145,6 +145,8 @@ sudo apt install p7zip-rar rar unrar unace arj cabextract
   ~~~
 - **Caffeine**		     
   - https://extensions.gnome.org/extension/517/caffeine
+- **Sound Input & Output Device Chooser**
+  - https://extensions.gnome.org/extension/906/sound-output-device-chooser
 - **User Themes**
   - https://extensions.gnome.org/extension/19/user-themes
 
