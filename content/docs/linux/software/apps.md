@@ -52,6 +52,11 @@ sudo ppa-purge ppa:ubuntuhandbook1/gimp
 - https://www.xnview.com/en/xnviewmp/#downloads
 
 
+## XnConvert
+
+- https://www.xnview.com/en/xnconvert/#downloads
+
+
 ## ONLYOFFICE Desktop Editors
 
 Office productivity suite 
