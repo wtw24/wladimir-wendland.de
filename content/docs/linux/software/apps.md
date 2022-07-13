@@ -68,6 +68,16 @@ sudo apt install systray-x
 ~~~
 
 
+## Shutter
+~~~shell
+sudo add-apt-repository ppa:linuxuprising/shutter
+~~~
+~~~shell
+sudo apt install shutter
+~~~
+
+
+
 ## Thunderbird 102 (Beta-Channel)
 Add Flathub-Beta-Channel
 ~~~shell
