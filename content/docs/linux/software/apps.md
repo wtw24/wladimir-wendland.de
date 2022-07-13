@@ -38,13 +38,18 @@ sudo apt update
 sudo apt install gimp
 ~~~
 
-### uninstall:
+**uninstall**:
 ~~~shell
 sudo apt install ppa-purge
 ~~~
 ~~~shell
 sudo ppa-purge ppa:ubuntuhandbook1/gimp
 ~~~
+
+
+## XnView MP
+
+- https://www.xnview.com/en/xnviewmp/#downloads
 
 
 ## ONLYOFFICE Desktop Editors
