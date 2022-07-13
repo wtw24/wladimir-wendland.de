@@ -35,6 +35,55 @@ flatpak install flathub org.onlyoffice.desktopeditors
 ~~~
 
 
+
+## Mailspring
+
+The best email app for people and teams at work
+
+- https://flathub.org/apps/details/com.getmailspring.Mailspring
+
+~~~shell
+flatpak install flathub com.getmailspring.Mailspring
+~~~
+
+
+## Thunderbird with system tray icon
+
+- https://github.com/Ximi1970/systray-x
+
+~~~shell
+wget -q https://download.opensuse.org/repositories/home:/Ximi1970/xUbuntu_22.04/Release.key
+~~~
+~~~shell
+sudo mv -f  Release.key  /etc/apt/trusted.gpg.d/Systray-x.Ximi1970.asc
+~~~
+~~~shell
+sudo bash -c 'echo "deb https://download.opensuse.org/repositories/home:/Ximi1970:/Mozilla:/Add-ons/xUbuntu_22.04 ./" > /etc/apt/sources.list.d/systray-x.list'
+~~~
+~~~shell
+sudo apt update
+~~~
+~~~shell
+sudo apt install systray-x
+~~~
+
+
+## Thunderbird 102 (Beta-Channel)
+Add Flathub-Beta-Channel
+~~~shell
+flatpak remote-add --if-not-exists flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
+~~~
+
+~~~shell
+flatpak install flathub-beta org.mozilla.Thunderbird
+~~~
+
+Delete Flathub-Beta-Channel
+~~~shell
+flatpak remote-delete flathub-beta
+~~~
+
+
 ## Déjà Dup Backups
 
 Protect yourself from data loss
