@@ -24,6 +24,29 @@ flatpak install flathub com.github.tchx84.Flatseal
 ~~~
 
 
+## GIMP Image Editor
+
+- https://launchpad.net/~ubuntuhandbook1/+archive/ubuntu/gimp
+
+~~~shell
+sudo add-apt-repository ppa:ubuntuhandbook1/gimp
+~~~
+~~~shell
+sudo apt update
+~~~
+~~~shell
+sudo apt install gimp
+~~~
+
+### uninstall:
+~~~shell
+sudo apt install ppa-purge
+~~~
+~~~shell
+sudo ppa-purge ppa:ubuntuhandbook1/gimp
+~~~
+
+
 ## ONLYOFFICE Desktop Editors
 
 Office productivity suite 
