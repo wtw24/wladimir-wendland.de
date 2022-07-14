@@ -472,3 +472,15 @@ flatpak install flathub org.onlyoffice.desktopeditors
 ~~~shell
 flatpak install flathub com.skype.Client
 ~~~
+
+
+## Blueman - Bluetooth Manager
+~~~shell
+sudo apt install blueman
+~~~
+
+
+## Restart PulseAudio
+~~~shell
+systemctl --user restart pulseaudio
+~~~
