@@ -77,7 +77,18 @@ flatpak uninstall --delete-data org.Gnome.Todo
 ## Remove un-used runtime libraries
 ~~~shell
 flatpak list --runtime
+~~~
+~~~shell
 flatpak uninstall --unused
+~~~
+~~~shell
+flatpak remove --unused
+~~~
+
+
+## Cleaning the data of already deleted applications
+~~~shell
+flatpak remove --delete-data
 ~~~
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Best Linux Apps"
 date: 2022-06-14
-tags: ["linux", "apps"]
+tags: ["linux", "apps", "software", "flatpak"]
 ---
 
 # Apps
@@ -24,6 +24,39 @@ flatpak install flathub com.github.tchx84.Flatseal
 ~~~
 
 
+## GIMP Image Editor
+
+- https://launchpad.net/~ubuntuhandbook1/+archive/ubuntu/gimp
+
+~~~shell
+sudo add-apt-repository ppa:ubuntuhandbook1/gimp
+~~~
+~~~shell
+sudo apt update
+~~~
+~~~shell
+sudo apt install gimp
+~~~
+
+**uninstall**:
+~~~shell
+sudo apt install ppa-purge
+~~~
+~~~shell
+sudo ppa-purge ppa:ubuntuhandbook1/gimp
+~~~
+
+
+## XnView MP
+
+- https://www.xnview.com/en/xnviewmp/#downloads
+
+
+## XnConvert
+
+- https://www.xnview.com/en/xnconvert/#downloads
+
+
 ## ONLYOFFICE Desktop Editors
 
 Office productivity suite 
@@ -32,6 +65,65 @@ Office productivity suite
 
 ~~~shell
 flatpak install flathub org.onlyoffice.desktopeditors
+~~~
+
+
+
+## Mailspring
+
+The best email app for people and teams at work
+
+- https://flathub.org/apps/details/com.getmailspring.Mailspring
+
+~~~shell
+flatpak install flathub com.getmailspring.Mailspring
+~~~
+
+
+## Thunderbird with system tray icon
+
+- https://github.com/Ximi1970/systray-x
+
+~~~shell
+wget -q https://download.opensuse.org/repositories/home:/Ximi1970/xUbuntu_22.04/Release.key
+~~~
+~~~shell
+sudo mv -f  Release.key  /etc/apt/trusted.gpg.d/Systray-x.Ximi1970.asc
+~~~
+~~~shell
+sudo bash -c 'echo "deb https://download.opensuse.org/repositories/home:/Ximi1970:/Mozilla:/Add-ons/xUbuntu_22.04 ./" > /etc/apt/sources.list.d/systray-x.list'
+~~~
+~~~shell
+sudo apt update
+~~~
+~~~shell
+sudo apt install systray-x
+~~~
+
+
+## Shutter
+~~~shell
+sudo add-apt-repository ppa:linuxuprising/shutter
+~~~
+~~~shell
+sudo apt install shutter
+~~~
+
+
+
+## Thunderbird 102 (Beta-Channel)
+Add Flathub-Beta-Channel
+~~~shell
+flatpak remote-add --if-not-exists flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
+~~~
+
+~~~shell
+flatpak install flathub-beta org.mozilla.Thunderbird
+~~~
+
+Delete Flathub-Beta-Channel
+~~~shell
+flatpak remote-delete flathub-beta
 ~~~
 
 

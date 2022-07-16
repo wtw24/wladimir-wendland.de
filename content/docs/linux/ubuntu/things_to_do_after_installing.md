@@ -17,6 +17,24 @@ sudo apt update && sudo apt list --upgradable && sudo apt upgrade && sudo apt au
 ~~~
 
 
+## Commands for System Cleanup
+
+**To clean partial packages**
+~~~shell
+sudo apt autoclean
+~~~
+
+**To remove unused dependencies**
+~~~shell
+sudo apt autoremove
+~~~
+
+To auto cleanup apt-cache
+~~~shell
+sudo apt clean
+~~~
+
+
 ## My Software and Tools
 ~~~shell
 sudo apt install \
@@ -30,6 +48,7 @@ sudo apt install \
   neofetch \
   remmina \
   inxi \
+  make \
   htop
 ~~~
 
@@ -39,6 +58,12 @@ sudo apt install \
 ### GNOME sushi - erweiterte Dateivorschau für Nautilus.
 ~~~shell
 sudo apt install gnome-sushi
+~~~
+
+
+## Show the trash icon on the desktop
+~~~shell
+gsettings set org.gnome.shell.extensions.ding show-trash true
 ~~~
 
 
@@ -144,6 +169,10 @@ sudo apt install p7zip-rar rar unrar unace arj cabextract
   ~~~
 - **Caffeine**		     
   - https://extensions.gnome.org/extension/517/caffeine
+- **Sound Input & Output Device Chooser**
+  - https://extensions.gnome.org/extension/906/sound-output-device-chooser
+- **OpenWeather**
+  - https://extensions.gnome.org/extension/750/openweather/
 - **User Themes**
   - https://extensions.gnome.org/extension/19/user-themes
 
@@ -353,7 +382,7 @@ You have to choose **“Cisco-compatible VPN-client (vpnc)“**!
 ![fritzvpn-settings](/img/fritzvpn-settings.png)
 
 
-## Install Media Codecs
+## Install Multimedia Codecs
 ~~~shell
 sudo apt install ubuntu-restricted-extras
 ~~~
@@ -381,7 +410,11 @@ gsettings set org.gnome.desktop.background primary-color '#232f3e'
 
 ## Global Git ignore
 ~~~shell
-make ~/.gitignore
+toch ~/.gitignore
+~~~
+
+~~~shell
+nano ~/.gitignore
 ~~~
 
 ~~~
@@ -438,4 +471,16 @@ flatpak install flathub org.onlyoffice.desktopeditors
 ### Skype
 ~~~shell
 flatpak install flathub com.skype.Client
+~~~
+
+
+## Blueman - Bluetooth Manager
+~~~shell
+sudo apt install blueman
+~~~
+
+
+## Restart PulseAudio
+~~~shell
+systemctl --user restart pulseaudio
 ~~~
