@@ -335,3 +335,35 @@ Organize and develop images from digital cameras
 ~~~shell
 flatpak install flathub org.darktable.Darktable
 ~~~
+
+
+## MP3Gain
+
+MP3Gain analyzes and adjusts mp3 files so that they have the same volume.
+
+~~~shell
+sudo apt install mp3gain
+~~~
+~~~shell
+mp3gain -r -d 3 -p *.mp3
+~~~
+
+
+## Kid3 - Audio Tagger
+
+If you want to easily tag multiple MP3, Ogg/Vorbis, FLAC, Monkey’s Audio, MPC, MP4/AAC, MP2, Opus, Speex, TrueAudio, 
+WavPack, WMA/WMV, WAV and AIFF files (e.g. full albums) without typing the same information again and again and have 
+control over both ID3v1 and ID3v2 tags, then Kid3 is the program you are looking for.
+
+~~~shell
+flatpak install flathub org.kde.kid3
+~~~
+
+
+## fre:ac
+
+Audio converter and CD ripper
+
+~~~shell
+flatpak install flathub org.freac.freac
+~~~
