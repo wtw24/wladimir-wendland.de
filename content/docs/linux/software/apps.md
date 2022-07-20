@@ -27,6 +27,7 @@ flatpak install flathub com.github.tchx84.Flatseal
 ## GIMP Image Editor
 
 - https://launchpad.net/~ubuntuhandbook1/+archive/ubuntu/gimp
+- https://packages.ubuntu.com/focal/amd64/gimp-plugin-registry/filelist
 
 ~~~shell
 sudo add-apt-repository ppa:ubuntuhandbook1/gimp
@@ -36,6 +37,14 @@ sudo apt update
 ~~~
 ~~~shell
 sudo apt install gimp
+~~~
+
+**install gimp-plugin-registry**
+~~~shell
+sudo apt-add-repository universe
+~~~
+~~~shell
+sudo apt-get install gimp-plugin-registry
 ~~~
 
 **uninstall**:
