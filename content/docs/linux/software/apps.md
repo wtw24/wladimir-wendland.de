@@ -28,6 +28,7 @@ flatpak install flathub com.github.tchx84.Flatseal
 
 - https://launchpad.net/~ubuntuhandbook1/+archive/ubuntu/gimp
 - https://packages.ubuntu.com/focal/amd64/gimp-plugin-registry/filelist
+- https://github.com/pixlsus/registry.gimp.org_static/tree/master/registry.gimp.org/files
 
 ~~~shell
 sudo add-apt-repository ppa:ubuntuhandbook1/gimp
