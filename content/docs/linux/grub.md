@@ -30,3 +30,22 @@ sudo grub-install /dev/sd_
 
 ## US-English Keyboard Layout
 ![fritzvpn-settings](/img/US-English.webp)
+
+
+## Windows Option Missing After Installing Ubuntu 22.04 LTS
+~~~shell
+sudo nano /etc/default/grub
+~~~
+
+~~~
+GRUB_CMDLINE_LINUX=""
+GRUB_DISABLE_OS_PROBER=false
+~~~
+
+~~~shell
+sudo update-grub
+~~~
+
+~~~shell
+reboot
+~~~
