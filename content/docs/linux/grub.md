@@ -32,13 +32,13 @@ sudo grub-install /dev/sd_
 ![fritzvpn-settings](/img/US-English.webp)
 
 
-## Windows Option Missing After Installing Ubuntu 22.04 LTS
+
+## Enable os-prober to show other partitions on GRUB
 ~~~shell
 sudo nano /etc/default/grub
 ~~~
 
 ~~~
-GRUB_CMDLINE_LINUX=""
 GRUB_DISABLE_OS_PROBER=false
 ~~~
 
