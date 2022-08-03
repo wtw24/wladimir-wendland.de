@@ -7,7 +7,10 @@ tags: ["linux", "apps", "software", "flatpak"]
 # Apps
 
 
-## System Profiler and Benchmark
+## HardInfo
+
+System Profiler and Benchmark
+
 ~~~shell
 sudo apt install hardinfo
 ~~~
@@ -134,16 +137,6 @@ wget https://www.shutterencoder.com/Shutter%20Encoder%2016.2%20Linux%2064bits.de
 
 ~~~shell
 sudo apt install ./shutterencoder.deb
-~~~
-
-
-## HardInfo
-~~~shell
-sudo add-apt-repository ppa:linuxuprising/hardinfo
-~~~
-
-~~~shell
-sudo apt install hardinfo
 ~~~
 
 
@@ -489,15 +482,6 @@ flatpak install flathub org.kde.kid3
 ~~~
 
 
-## fre:ac
-
-Audio converter and CD ripper
-
-~~~shell
-flatpak install flathub org.freac.freac
-~~~
-
-
 ## OpenSnitch
 
 OpenSnitch is a GNU/Linux port of the Little Snitch application firewall
@@ -557,4 +541,13 @@ Gathers information on CPU, motherboard and more
 ~~~shell
 sudo apt install cpu-x
 ~~~
+
+
+## Etcher
+
+Flash OS images to SD cards & USB drives, safely and easily.
+
+- https://www.balena.io/etcher/
+- https://github.com/balena-io/etcher/releases
+
 
