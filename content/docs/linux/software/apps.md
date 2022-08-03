@@ -496,3 +496,27 @@ Audio converter and CD ripper
 ~~~shell
 flatpak install flathub org.freac.freac
 ~~~
+
+
+## OpenSnitch
+
+OpenSnitch is a GNU/Linux port of the Little Snitch application firewall
+
+- https://github.com/evilsocket/opensnitch/releases
+- https://github.com/evilsocket/opensnitch/issues/647
+
+~~~shell
+sudo apt install ./opensnitch*.deb ./python3-opensnitch-ui*.deb
+~~~
+
+~~~shell
+sudo apt install python3-pip python3-pyasn
+~~~
+
+~~~shell
+pip3 install --user qt-material
+~~~
+
+~~~shell
+pip3 install --user --ignore-installed grpcio
+~~~
