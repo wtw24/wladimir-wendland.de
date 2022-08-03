@@ -547,3 +547,14 @@ Shortcut:
 F12
 ~~~
 
+
+## CPU-X
+
+Gathers information on CPU, motherboard and more
+
+- https://github.com/X0rg/CPU-X/releases
+
+~~~shell
+sudo apt install cpu-x
+~~~
+
