@@ -137,6 +137,16 @@ sudo apt install ./shutterencoder.deb
 ~~~
 
 
+## HardInfo
+~~~shell
+sudo add-apt-repository ppa:linuxuprising/hardinfo
+~~~
+
+~~~shell
+sudo apt install hardinfo
+~~~
+
+
 
 ## Thunderbird 102 (Beta-Channel)
 Add Flathub-Beta-Channel
