@@ -520,3 +520,30 @@ pip3 install --user qt-material
 ~~~shell
 pip3 install --user --ignore-installed grpcio
 ~~~
+
+
+## Guake 
+
+drop-down terminal
+
+~~~shell
+sudo apt install guake
+~~~
+
+Custom Shortcut:
+
+Name
+~~~
+Guake
+~~~
+
+Command:
+~~~shell
+guake-toggle
+~~~
+
+Shortcut:
+~~~
+F12
+~~~
+
