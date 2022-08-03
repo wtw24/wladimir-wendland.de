@@ -121,6 +121,22 @@ sudo apt install shutter
 ~~~
 
 
+## Shutter Encoder
+
+A converter designed by video editors.
+
+- https://www.shutterencoder.com/
+- https://www.shutterencoder.com/en/thanks.html
+
+~~~shell
+wget https://www.shutterencoder.com/Shutter%20Encoder%2016.2%20Linux%2064bits.deb -O shutterencoder.deb
+~~~
+
+~~~shell
+sudo apt install ./shutterencoder.deb
+~~~
+
+
 
 ## Thunderbird 102 (Beta-Channel)
 Add Flathub-Beta-Channel
