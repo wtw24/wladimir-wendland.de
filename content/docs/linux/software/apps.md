@@ -112,7 +112,7 @@ sudo apt install systray-x
 ~~~
 
 
-## Shutter
+## Shutter (Screenshot Tool)
 ~~~shell
 sudo add-apt-repository ppa:linuxuprising/shutter
 ~~~
