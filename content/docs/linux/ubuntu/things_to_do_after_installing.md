@@ -410,7 +410,7 @@ gsettings set org.gnome.desktop.background primary-color '#232f3e'
 
 ## Global Git ignore
 ~~~shell
-toch ~/.gitignore
+touch ~/.gitignore
 ~~~
 
 ~~~shell
