@@ -26,6 +26,26 @@ Manage Flatpak permissions
 flatpak install flathub com.github.tchx84.Flatseal
 ~~~
 
+### Obsidian - Markdown-based knowledge base
+~~~shell
+flatpak install flathub md.obsidian.Obsidian
+~~~
+
+### Telegram Desktop
+~~~shell
+flatpak install flathub org.telegram.desktop
+~~~
+
+### ONLYOFFICE Desktop Editors
+~~~shell
+flatpak install flathub org.onlyoffice.desktopeditors
+~~~
+
+### Skype
+~~~shell
+flatpak install flathub com.skype.Client
+~~~
+
 
 ## GIMP Image Editor
 

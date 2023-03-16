@@ -1,10 +1,10 @@
 ---
-title: "Things to Do After Installing Ubuntu GNOME 20.04/22.04 LTS"
-date: 2022-01-30
+title: "Things to Do After Installing Ubuntu GNOME 22.04 LTS"
+date: 2023-03-16
 tags: ["linux", "ubuntu"]
 ---
 
-# Things to Do After Installing Ubuntu GNOME 20.04/22.04 LTS
+# Things to Do After Installing Ubuntu GNOME 22.04 LTS
 
 
 ## Check and Install Package Updates
@@ -14,6 +14,14 @@ sudo apt update && sudo apt list --upgradable && sudo apt upgrade
 
 ~~~shell
 sudo apt update && sudo apt list --upgradable && sudo apt upgrade && sudo apt autoremove
+~~~
+
+~~~shell
+sudo aptitude update && sudo aptitude upgrade
+~~~
+
+~~~shell
+sudo aptitude update && sudo apt list --upgradable && sudo aptitude upgrade && sudo apt autoremove
 ~~~
 
 
@@ -49,21 +57,43 @@ sudo apt install \
   remmina \
   inxi \
   make \
-  htop
+  htop \
+  gnome-sushi \
+  aptitude \
+  zsh \
+  powerline \
+  fonts-powerline
 ~~~
 
 
-## Install GNOME Sushi
-
-### GNOME sushi - erweiterte Dateivorschau für Nautilus.
+## System Tuning
 ~~~shell
-sudo apt install gnome-sushi
+sudo apt install gnome-system-tools dconf-editor gnome-tweaks chrome-gnome-shell gnome-shell-extensions
 ~~~
 
 
-## Show the trash icon on the desktop
+## Installing additional support for archivers
+~~~sh
+sudo apt install p7zip-rar rar unrar unace arj cabextract
+~~~
+
+
+## Show the Trash icon on the desktop
 ~~~shell
 gsettings set org.gnome.shell.extensions.ding show-trash true
+~~~
+
+## Show the Home icon on the desktop
+~~~shell
+gsettings set org.gnome.shell.extensions.ding show-home 'true'
+~~~
+
+## Show the External Drives icons on the desktop
+
+From GUI: `Extensions` >> `Desktop Icons NG (DNG)` >> `Settings`
+
+~~~shell
+gsettings set org.gnome.shell.extensions.ding show-volumes 'true'
 ~~~
 
 
@@ -78,10 +108,6 @@ touch 'New Text File.txt' && touch 'New Markdown File.md'
 
 
 ## Install Z-shell (Oh My Zsh)
-~~~shell
-sudo apt install zsh powerline fonts-powerline
-~~~
-
 ~~~shell
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ~~~
@@ -101,6 +127,7 @@ nano ~/.zshrc
 ~~~
 ~~~
 plugins=(
+    git
     zsh-autosuggestions
     zsh-syntax-highlighting
     command-not-found
@@ -123,9 +150,7 @@ DISABLE_MAGIC_FUNCTIONS=true
 bash -c  "$(wget -qO- https://git.io/vQgMr)"
 ~~~
 
-- Cai (27)
-- Arthur (09)
-- Afterglow (06)
+- Cai (32)
 
 
 ## QT Applications Style
@@ -135,18 +160,6 @@ sudo apt install -y qt5-style-plugins
 
 ~~~shell
 echo "export QT_QPA_PLATFORMTHEME=gtk2" >> ~/.profile
-~~~
-
-
-## System Tuning
-~~~shell
-sudo apt install gnome-system-tools dconf-editor gnome-tweaks chrome-gnome-shell gnome-shell-extensions
-~~~
-
-
-## Installing additional support for archivers
-~~~sh
-sudo apt install p7zip-rar rar unrar unace arj cabextract
 ~~~
 
 
@@ -171,8 +184,6 @@ sudo apt install p7zip-rar rar unrar unace arj cabextract
   - https://extensions.gnome.org/extension/517/caffeine
 - **Sound Input & Output Device Chooser**
   - https://extensions.gnome.org/extension/906/sound-output-device-chooser
-- **OpenWeather**
-  - https://extensions.gnome.org/extension/750/openweather/
 - **User Themes**
   - https://extensions.gnome.org/extension/19/user-themes
 
@@ -197,64 +208,6 @@ sudo apt-get install apt-xapian-index && sudo update-apt-xapian-index -vf
 `Ctrl`+`Alt`+`Delete`
 ~~~shell
 gnome-system-monitor
-~~~
-
-
-### Screenshots
-
-**Screenshot - Grab the current window**
-
-`Alt`+`Print`
-~~~sh
-sh -c '~/bin/sswin.sh'
-~~~
-
-**~/bin/sswin.sh**
-~~~
-#!/bin/bash
-## Gnome-Screenshot - Grab the current window 
-## sh -c '~/bin/sswin.sh'
-## [Alt+Print]
-
-DATE=$(date +%Y-%m-%d-%H:%M:%S)
-gnome-screenshot -w -f ~/Pictures/Screenshots/Screenshot-$DATE.png
-~~~
-
-**Screenshot - Grab the whole screen**
-
-`Shift`+`Print`
-~~~shell
-sh -c '~/bin/ssfull.sh'
-~~~
-
-**~/bin/ssfull.sh**
-~~~
-#!/bin/bash
-## Gnome-Screenshot - Grab the whole screen 
-## sh -c '~/bin/ssfull.sh'
-## [Shift+Print]
-
-DATE=$(date +%Y-%m-%d-%H:%M:%S)
-gnome-screenshot -f ~/Pictures/Screenshots/Screenshot-$DATE.png
-~~~
-
-
-**Screenshot - Select area to grab**
-
-`Print`
-~~~shell
-sh -c '~/bin/ssarea.sh'
-~~~
-
-**~/bin/ssarea.sh**
-~~~
-#!/bin/bash
-## Gnome-Screenshot - Select area to grab 
-## sh -c '~/bin/ssarea.sh'
-## [Print]
-
-DATE=$(date +%Y-%m-%d-%H:%M:%S)
-gnome-screenshot -a -f ~/Pictures/Screenshots/Screenshot-$DATE.png
 ~~~
 
 
@@ -286,12 +239,11 @@ xdotool search -class gnome-terminal windowactivate %@
 
 ## Fonts
 
+- https://github.com/mozilla/Fira
+
 ### Fonts Dirs
 - /usr/share/fonts
 - /usr/local/share/fonts
-
-### Links
-- https://github.com/mozilla/Fira
 
 
 ### Install Microsoft fonts
@@ -306,23 +258,14 @@ sudo mkdir -p /usr/local/share/fonts/my_fonts
 ~~~
 
 ~~~shell
-sudo cp *.ttf /usr/local/share/fonts/my_fonts
+sudo cp *.ttf /usr/local/share/fonts/my_fonts \
 ~~~
 
 ~~~shell
-sudo chown root:staff /usr/local/share/fonts/my_fonts -R
-~~~
-
-~~~shell
-sudo chmod 644 /usr/local/share/fonts/my_fonts/* -R
-~~~
-
-~~~shell
-sudo chmod 755 /usr/local/share/fonts/my_fonts
-~~~
-
-~~~shell
-sudo fc-cache -fv
+sudo chown root:staff /usr/local/share/fonts/my_fonts -R \
+&& sudo chmod 644 /usr/local/share/fonts/my_fonts/* -R \
+&& sudo chmod 755 /usr/local/share/fonts/my_fonts \
+&& sudo fc-cache -fv
 ~~~
 
 
@@ -370,7 +313,8 @@ sudo apt install network-manager-openvpn-gnome openvpn-systemd-resolved
 ~~~
 
 ### VPN FritzBox
-https://www.nerdharbor.de/2020/06/16/configure-vpn-connection-to-fritzbox-under-ubuntu-20-04/
+
+- https://www.nerdharbor.de/2020/06/16/configure-vpn-connection-to-fritzbox-under-ubuntu-20-04/
 
 ~~~shell
 sudo apt install vpnc network-manager-vpnc-gnome
@@ -426,6 +370,96 @@ git config --global core.excludesFile '~/.gitignore'
 ~~~
 
 
+## Install Flatpak
+~~~shell
+sudo apt install flatpak
+~~~
+
+###  Integrate the flatpak plugin with Software Center
+~~~shell
+ sudo apt install gnome-software-plugin-flatpak
+~~~
+
+Add the Flathub repository
+~~~shell
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+~~~
+
+
+## Blueman - Bluetooth Manager
+~~~shell
+sudo apt install blueman
+~~~
+
+
+## Restart PulseAudio
+~~~shell
+systemctl --user restart pulseaudio
+~~~
+
+## Font anti-aliasing in Ubuntu
+
+- https://superuser.com/questions/8824/bad-font-anti-aliasing-in-ubuntu
+
+Open up `.fonts.conf` under your home directory (`~/.fonts.conf`) and paste this in:
+~~~
+<?xml version="1.0" ?>
+<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+   <fontconfig>
+      <match target="font">
+         <edit name="autohint" mode="assign">
+            <bool>true</bool>
+         </edit>
+      </match>
+</fontconfig>
+~~~
+
+## Fix: Key is stored in legacy trusted.gpg keyring after Ubuntu 22.04 update
+
+- https://askubuntu.com/questions/1403556/key-is-stored-in-legacy-trusted-gpg-keyring-after-ubuntu-22-04-update
+
+~~~shell
+apt-key list
+~~~
+
+Note: The DF7587C3 value comes from the last 8 characters of the pub code from the apt-key list output.
+
+~~~shell
+apt-key export DF7587C3 | sudo gpg --dearmour -o /usr/share/keyrings/skype-linux-client.gpg
+~~~
+
+~~~shell
+sudo -H gedit /etc/apt/sources.list.d/skype-stable.list
+~~~
+
+~~~
+deb [arch=amd64 signed-by=/usr/share/keyrings/skype-linux-client.gpg] https://repo.skype.com/deb stable main
+~~~
+
+~~~shell
+sudo apt update
+~~~
+
+~~~shell
+sudo apt-key del DF7587C3
+~~~
+
+
+## Fix GRUB for dual boot system
+~~~shell
+sudo nano /etc/default/grub
+~~~
+
+add:
+~~~
+GRUB_DISABLE_OS_PROBER=false 
+~~~
+
+~~~shell
+sudo update-grub
+~~~
+
+
 ## Scale GRUB menu on 4K displays
 ~~~shell
 sudo nano /etc/default/grub
@@ -443,44 +477,7 @@ sudo update-grub
 ~~~
 
 
-## Install Flatpak
+## Add AppImage support
 ~~~shell
-sudo apt install flatpak
-~~~
-
-Add the Flathub repository
-~~~shell
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-~~~
-
-### Obsidian - Markdown-based knowledge base
-~~~shell
-flatpak install flathub md.obsidian.Obsidian
-~~~
-
-### Telegram Desktop
-~~~shell
-flatpak install flathub org.telegram.desktop
-~~~
-
-### ONLYOFFICE Desktop Editors
-~~~shell
-flatpak install flathub org.onlyoffice.desktopeditors
-~~~
-
-### Skype
-~~~shell
-flatpak install flathub com.skype.Client
-~~~
-
-
-## Blueman - Bluetooth Manager
-~~~shell
-sudo apt install blueman
-~~~
-
-
-## Restart PulseAudio
-~~~shell
-systemctl --user restart pulseaudio
+sudo apt install libfuse2
 ~~~

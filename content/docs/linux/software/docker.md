@@ -51,7 +51,7 @@ sudo apt update
 ~~~
 
 ~~~shell
-sudo apt install docker-ce docker-ce-cli containerd.io
+sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ~~~
 
 Install a specific version using the version string from the second column, for example, `5:18.09.1~3-0~ubuntu-xenial`.
@@ -117,6 +117,7 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-
 ~~~
 or:
 ~~~shell
+sudo curl -SL https://github.com/docker/compose/releases/download/v2.16.0/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
 sudo curl -L "https://github.com/docker/compose/releases/download/2.2.23/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 ~~~
 
