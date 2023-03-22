@@ -106,6 +106,22 @@ XDG_TEMPLATES_DIR=$(xdg-user-dir TEMPLATES) && cd "$XDG_TEMPLATES_DIR"
 touch 'New Text File.txt' && touch 'New Markdown File.md'
 ~~~
 
+## Nautilus list view, permanently change the displayed columns
+~~~shell
+gsettings set org.gnome.nautilus.list-view default-visible-columns "['name', 'size', 'detailed_type', 'owner', 'permissions', 'date_modified_with_time', 'starred']"
+~~~
+
+### Default visible columns
+~~~
+['name', 'size', 'date_modified', 'starred']
+['name', 'size', 'detailed_type', 'owner', 'permissions', 'date_modified_with_time', 'starred']
+~~~
+
+### Default column order
+~~~
+['name', 'size', 'type', 'owner', 'group', 'permissions', 'mime_type', 'where', 'date_modified', 'date_modified_with_time', 'date_accessed', 'date_created', 'recency', 'starred']
+~~~
+
 
 ## Install Z-shell (Oh My Zsh)
 ~~~shell
