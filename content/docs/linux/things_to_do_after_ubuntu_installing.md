@@ -1,6 +1,6 @@
 ---
 title: "Things to Do After Installing Ubuntu GNOME 22.04 LTS"
-date: 2023-03-16
+date: 2023-04-12
 tags: ["linux", "ubuntu"]
 ---
 
@@ -108,7 +108,7 @@ touch 'New Text File.txt' && touch 'New Markdown File.md'
 
 ## Nautilus list view, permanently change the displayed columns
 ~~~shell
-gsettings set org.gnome.nautilus.list-view default-visible-columns "['name', 'size', 'detailed_type', 'owner', 'permissions', 'date_modified_with_time', 'starred']"
+gsettings set org.gnome.nautilus.list-view default-visible-columns "['name', 'size', 'owner', 'permissions', 'date_modified_with_time', 'starred']"
 ~~~
 
 ### Default visible columns
@@ -140,6 +140,9 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 ### Enable Oh-my-zsh plugins
 ~~~shell
 nano ~/.zshrc
+~~~
+~~~
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 ~~~
 ~~~
 plugins=(
