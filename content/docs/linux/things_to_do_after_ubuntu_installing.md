@@ -195,9 +195,16 @@ echo "export QT_QPA_PLATFORMTHEME=gtk2" >> ~/.profile
   - https://extensions.gnome.org/extension/1160/dash-to-panel
 - **Arc Menu**		     
   - https://extensions.gnome.org/extension/3628/arcmenu
+
+  **Install Arc Menu GNOME dependencies**
   ~~~shell
-  # Install Arc Menu GNOME dependencies
   sudo apt install gnome-shell-extensions gnome-menus gir1.2-gmenu-3.0
+  ~~~ 
+  
+  **Fix: Settings Shortcut**
+  `ArchMenu Settings` -> `Menu` -> `Application Shortcuts` -> `Settings` -> `...` -> `Modify` -> `Command`
+  ~~~
+  gnome-control-center
   ~~~
 - **Caffeine**		     
   - https://extensions.gnome.org/extension/517/caffeine
