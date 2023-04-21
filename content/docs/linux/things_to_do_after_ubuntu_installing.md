@@ -284,7 +284,7 @@ sudo mkdir -p /usr/local/share/fonts/my_fonts
 ~~~
 
 ~~~shell
-sudo cp *.ttf /usr/local/share/fonts/my_fonts \
+sudo cp *.ttf /usr/local/share/fonts/my_fonts
 ~~~
 
 ~~~shell
