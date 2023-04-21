@@ -25,21 +25,38 @@ sudo aptitude update && sudo apt list --upgradable && sudo aptitude upgrade && s
 ~~~
 
 
-## Commands for System Cleanup
-
-**To clean partial packages**
+## Enabling SSH
 ~~~shell
-sudo apt autoclean
+sudo apt install openssh-server
 ~~~
 
-**To remove unused dependencies**
 ~~~shell
-sudo apt autoremove
+sudo systemctl status ssh
 ~~~
 
-To auto cleanup apt-cache
 ~~~shell
-sudo apt clean
+sudo ufw allow ssh
+~~~
+
+
+## Install the NVIDIA drivers
+
+~~~shell
+sudo add-apt-repository ppa:graphics-drivers/ppa
+~~~
+
+### Identify graphic card model and recommended driver
+~~~shell
+ubuntu-drivers devices
+~~~
+
+### Install all recommended Nvidia Drivers automatically
+~~~shell
+sudo ubuntu-drivers autoinstall
+~~~
+
+~~~shell
+sudo reboot
 ~~~
 
 
