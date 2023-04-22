@@ -139,6 +139,10 @@ gsettings set org.gnome.nautilus.list-view default-visible-columns "['name', 'si
 ['name', 'size', 'type', 'owner', 'group', 'permissions', 'mime_type', 'where', 'date_modified', 'date_modified_with_time', 'date_accessed', 'date_created', 'recency', 'starred']
 ~~~
 
+## Nautilus Copy Path/Name
+
+- https://github.com/chr314/nautilus-copy-path/tree/1.8.0
+
 
 ## Install Z-shell (Oh My Zsh)
 ~~~shell
