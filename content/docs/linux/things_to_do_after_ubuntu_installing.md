@@ -559,3 +559,8 @@ Any changes takes effect after logout and login.
 mv ~/.config/user-dirs.dirs ~/.config/user-dirs.dirs.broken
 xdg-user-dirs-update
 ~~~
+
+## Fix: GNOME Sushi freezes system when previewing OpenDocument
+~~~shell
+sudo apt install unoconv
+~~~
