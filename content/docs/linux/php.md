@@ -906,3 +906,25 @@ php8.1-zmq - ZeroMQ messaging bindings for PHP
 php8.1-zstd - Zstandard extension for PHP
 ...
 ~~~
+
+
+# Setup a logrotate.d script.
+Create a file called `php-cli` in `/etc/logrotate.d/` like this:
+~~~shell
+sudo nano /etc/logrotate.d/php-cli
+~~~
+
+And place the contents of this log rotate daemon script in there:
+~~~
+/var/log/php_errors.log {
+    weekly
+    missingok
+    rotate 13
+    compress
+    delaycompress
+    copytruncate
+    notifempty
+    create 664 root www-users
+    sharedscripts
+}
+~~~
