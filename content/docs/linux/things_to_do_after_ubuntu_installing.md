@@ -425,11 +425,6 @@ git config --global core.excludesFile '~/.gitignore'
 sudo apt install flatpak
 ~~~
 
-###  Integrate the flatpak plugin with Software Center
-~~~shell
- sudo apt install gnome-software-plugin-flatpak
-~~~
-
 Add the Flathub repository
 ~~~shell
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
