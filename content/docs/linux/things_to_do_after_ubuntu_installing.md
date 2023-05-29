@@ -340,6 +340,30 @@ sudo apt install network-manager-openvpn-gnome openvpn-systemd-resolved
 
 ### VPN FritzBox
 
+- https://avm.de/service/wissensdatenbank/dok/FRITZ-Box-6490-Cable/1471_VPN-zur-FRITZ-Box-unter-Linux-einrichten/
+
+~~~shell
+sudo apt-get install network-manager-vpnc-gnome
+~~~
+
+1. Starten Sie die **Advanced Network Configuration**, z.B. im Terminal über `nm-connection-editor`.
+~~~shell
+nm-connection-editor
+~~~
+2. Klicken Sie im Abschnitt `VPN` auf das `Pluszeichen`. Das Fenster `VPN hinzufügen` wird geöffnet.
+3. Wählen Sie im Fenster `VPN hinzufügen` den Eintrag `Cisco-kompatibler VPN-Client (vpnc)` aus.
+4. Tragen Sie im Eingabefeld `Name` einen beliebigen Namen (`FRITZ!Box-VPN`) ein.
+5. Tragen Sie im Eingabefeld `Gateway` die MyFRITZ!-Adresse der FRITZ!Box (`pi80ewgfi72d2os42.myfritz.net`) ein.
+4. Tragen Sie im Eingabefeld `Benutzername` den Benutzernamen des FRITZ!Box-Benutzers (`Max Mustermann`) ein.
+5. Klicken Sie auf das Symbol im Eingabefeld `Benutzerpasswort`, wählen Sie den Option `Passwort nur für diesen Benutzer speichern` aus und tragen Sie dann das Kennwort des FRITZ!Box-Benutzers (`geheim1234`) ein.
+> **Hinweis:** Bei einigen Ubuntu-Versionen muss stattdessen die Option `Passwort für alle Benutzer speichern` aktiviert werden.
+6. Tragen Sie im Eingabefeld `Gruppenname` den Benutzernamen des FRITZ!Box-Benutzers (`Max Mustermann`) ein.
+7. Klicken Sie auf das Symbol im Eingabefeld `Gruppenpasswort`, wählen Sie den Eintrag `Passwort nur für diesen Benutzer speichern` aus und tragen Sie dann das `Shared Secret` des FRITZ!Box-Benutzers (`Zj7hPCouK65IrPU4`) ein. Das `Shared Secret` wird in den VPN-Einstellungen des Benutzers im Abschnitt `iPhone, iPad oder iPod Touch` angezeigt.
+8. Klicken Sie auf `Erweitert`.
+9. Tragen Sie im Eingabefeld `Tunnel-Schnittstellenname` `tun0` ein und klicken Sie auf auf `Apply`.
+10. Klicken Sie auf die Schaltfläche `Speichern`, um die Einrichtung abzuschließen. Falls die Schaltfläche `Speichern` ausgegraut ist, klicken Sie noch einmal auf `Erweitert` und dann auf `Apply` und wiederholen Sie das Speichern.
+11. Klicken Sie bei der VPN-Verbindung auf den An/Aus-Schalter, um die Verbindung herzustellen.
+
 - https://www.nerdharbor.de/2020/06/16/configure-vpn-connection-to-fritzbox-under-ubuntu-20-04/
 
 ~~~shell
