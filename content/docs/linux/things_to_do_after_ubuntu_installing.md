@@ -1,6 +1,6 @@
 ---
 title: "Things to Do After Installing Ubuntu GNOME 22.04 LTS"
-date: 2023-04-12
+date: 2023-04-29
 tags: ["linux", "ubuntu"]
 ---
 
@@ -9,15 +9,7 @@ tags: ["linux", "ubuntu"]
 
 ## Check and Install Package Updates
 ~~~shell
-sudo apt update && sudo apt list --upgradable && sudo apt upgrade
-~~~
-
-~~~shell
 sudo apt update && sudo apt list --upgradable && sudo apt upgrade && sudo apt autoremove
-~~~
-
-~~~shell
-sudo aptitude update && sudo aptitude upgrade
 ~~~
 
 ~~~shell
@@ -31,32 +23,19 @@ sudo apt install openssh-server
 ~~~
 
 ~~~shell
+sudo systemctl enable ssh
+~~~
+
+~~~shell
+sudo systemctl start ssh
+~~~
+
+~~~shell
 sudo systemctl status ssh
 ~~~
 
 ~~~shell
 sudo ufw allow ssh
-~~~
-
-
-## Install the NVIDIA drivers
-
-~~~shell
-sudo add-apt-repository ppa:graphics-drivers/ppa
-~~~
-
-### Identify graphic card model and recommended driver
-~~~shell
-ubuntu-drivers devices
-~~~
-
-### Install all recommended Nvidia Drivers automatically
-~~~shell
-sudo ubuntu-drivers autoinstall
-~~~
-
-~~~shell
-sudo reboot
 ~~~
 
 
