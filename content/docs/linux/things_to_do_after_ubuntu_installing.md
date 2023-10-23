@@ -394,6 +394,7 @@ To enable it, open **Software & Updates**, once it launches, click on the **Othe
 To clear the current image setting:
 ~~~shell
 gsettings set org.gnome.desktop.background picture-uri ""
+gsettings set org.gnome.desktop.background picture-uri-dark ""
 ~~~
 
 To set the primary color (the first color in a gradient or the solid color):
@@ -561,4 +562,9 @@ xdg-user-dirs-update
 ## Fix: GNOME Sushi freezes system when previewing OpenDocument
 ~~~shell
 sudo apt install unoconv
+~~~
+
+## Detach Child Pop-up windows from Parent
+~~~shell
+gsettings set org.gnome.mutter attach-modal-dialogs false
 ~~~
