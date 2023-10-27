@@ -526,6 +526,15 @@ pip3 install --user --ignore-installed grpcio
 ~~~
 
 
+## Mission Center
+Monitor system resource usage
+- https://flathub.org/de/apps/io.missioncenter.MissionCenter
+~~~shell
+flatpak install flathub io.missioncenter.MissionCenter
+~~~
+
+
+
 ## Guake 
 
 drop-down terminal

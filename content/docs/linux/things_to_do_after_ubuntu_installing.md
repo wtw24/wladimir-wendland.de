@@ -43,6 +43,7 @@ sudo ufw allow ssh
 ~~~shell
 sudo apt install \
   nano \
+  nala \
   git \
   wget \
   curl \
