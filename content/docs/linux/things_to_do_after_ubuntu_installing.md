@@ -13,6 +13,10 @@ sudo apt update && sudo apt list --upgradable && sudo apt upgrade && sudo apt au
 ~~~
 
 ~~~shell
+sudo nala update && sudo nala list --upgradable && sudo nala upgrade && sudo nala autoremove
+~~~
+
+~~~shell
 sudo aptitude update && sudo apt list --upgradable && sudo aptitude upgrade && sudo apt autoremove
 ~~~
 
