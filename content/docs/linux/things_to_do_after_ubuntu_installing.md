@@ -574,3 +574,35 @@ sudo apt install unoconv
 ~~~shell
 gsettings set org.gnome.mutter attach-modal-dialogs false
 ~~~
+
+---
+
+## Screensaver
+- https://www.jwz.org/xscreensaver/
+
+### Install
+~~~shell
+sudo apt-get install xscreensaver xscreensaver-gl-extra xscreensaver-data-extra
+~~~
+
+### Remove the GNOME screensaver (if installed)
+~~~shell
+sudo apt-get remove gnome-screensaver
+~~~
+
+### To start the screensaver via autostart, add the below command in the startup applications
+~~~shell
+xscreensaver -nosplash
+~~~
+
+### Disable Screensaver
+~~~shell
+xscreensaver-command -deactivate
+~~~
+
+### To activate again
+~~~shell
+xscreensaver-command -activate
+~~~
+
+---
