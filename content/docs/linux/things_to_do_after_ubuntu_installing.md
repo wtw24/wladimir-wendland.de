@@ -606,3 +606,8 @@ xscreensaver-command -activate
 ~~~
 
 ---
+
+## Access files and folders on Ext from Windows
+
+- [Linux Reader](https://www.diskinternals.com/linux-reader/)
+- [Ext2Read](https://sourceforge.net/projects/ext2read/)
