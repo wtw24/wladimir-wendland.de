@@ -503,6 +503,7 @@ flatpak install flathub org.kde.kid3
 
 
 ## How to convert MP3 ID3 tag encodings
+- https://www.xmodulo.com/convert-mp3-id3-tag-encodings-linux.html
 
 ### Install mid3iconv on Linux
 The `mid3iconv` tool is part of `python3-mutagen` package, which is universally available on major Linux platforms.
