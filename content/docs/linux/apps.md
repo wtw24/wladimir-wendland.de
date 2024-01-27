@@ -502,6 +502,25 @@ flatpak install flathub org.kde.kid3
 ~~~
 
 
+## How to convert MP3 ID3 tag encodings
+
+### Install mid3iconv on Linux
+The `mid3iconv` tool is part of `python3-mutagen` package, which is universally available on major Linux platforms.
+~~~shell
+sudo apt-get install python3-mutagen
+~~~
+
+### Convert ID3 Character Encodings with mid3iconv
+For example, to convert ID3's character encoding from `CP1252` to `UTF-8/Unicode`:
+~~~shell
+mid3iconv -e CP1251 -d *.mp3
+~~~
+
+The typical command-line usage of mid3iconv is as follows.
+~~~shell
+mid3iconv -e <source-encoding> -d input.mp3
+~~~
+
 ## OpenSnitch
 
 OpenSnitch is a GNU/Linux port of the Little Snitch application firewall
