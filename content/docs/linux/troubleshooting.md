@@ -22,6 +22,7 @@ du -sh /tmp
 
 # show the size of all folders and files in a particular folder, sorting them by size
 du -h --max-depth=1 | sort -hr
+du -h -d 1 | sort -hr
 # with details
 du -ah /tmp | sort -rh
 
