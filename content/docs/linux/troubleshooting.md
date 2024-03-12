@@ -26,6 +26,8 @@ du -h -d 1 | sort -hr
 # with details
 du -ah /tmp | sort -rh
 
+du -sh ./node_modules/* | sort -nr | grep '\dM.*'
+
 lsblk
 
 # SMART Attributes Data Structure
