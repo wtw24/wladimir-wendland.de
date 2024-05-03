@@ -164,7 +164,8 @@ https://extensions.gnome.org/extension/1160/dash-to-panel
 https://extensions.gnome.org/extension/3628/arcmenu
 ### Caffeine
 https://extensions.gnome.org/extension/517/caffeine
-
+### Steal my focus window
+https://extensions.gnome.org/extension/6385/steal-my-focus-window
 
 
 ## Install Flatpak
