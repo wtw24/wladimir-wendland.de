@@ -184,6 +184,13 @@ https://flathub.org/apps/com.github.tchx84.Flatseal
 flatpak install flathub com.github.tchx84.Flatseal
 ~~~
 
+### File Roller
+https://flathub.org/de/apps/org.gnome.FileRoller
+~~~shell
+flatpak install flathub org.gnome.FileRoller
+~~~
+
+
 ### Haruna Media Player
 https://flathub.org/de/apps/org.kde.haruna
 ~~~shell
@@ -459,3 +466,6 @@ echo "export QT_QPA_PLATFORMTHEME=gtk2" >> ~/.profile
 
 ## Visual Studio Code	
 https://code.visualstudio.com/download
+
+## MuonSSH
+https://github.com/devlinx9/muon-ssh/releases
