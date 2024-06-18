@@ -43,6 +43,7 @@ sudo apt install \
   htop \
   gnome-sushi \
   zsh \
+  duf \
   powerline \
   fonts-powerline
 ~~~
@@ -82,18 +83,6 @@ sudo chown root:root -R phpstorm/
 sudo chmod 4755 /opt/phpstorm/jbr/lib/chrome-sandbox
 ~~~
 - `PhpStorm` > `Tools` > `Create Desktop Entry`
-
-### Bruno Rest Client
-https://www.usebruno.com/downloads
-~~~shell
-sudo mkdir -p /etc/apt/keyrings 
-sudo gpg --no-default-keyring --keyring /etc/apt/keyrings/bruno.gpg --keyserver keyserver.ubuntu.com --recv-keys 9FA6017ECABE0266 
-
-echo "deb [signed-by=/etc/apt/keyrings/bruno.gpg] http://debian.usebruno.com/ bruno stable" | sudo tee /etc/apt/sources.list.d/bruno.list 
- 
-sudo apt update 
-sudo apt install bruno
-~~~
 
 ### DeaDBeeF Audio Player
 https://deadbeef.sourceforge.io/download.html
@@ -184,12 +173,23 @@ https://flathub.org/apps/com.github.tchx84.Flatseal
 flatpak install flathub com.github.tchx84.Flatseal
 ~~~
 
+### Gear Lever
+https://flathub.org/de/apps/it.mijorus.gearlever
+~~~shell
+flatpak install flathub it.mijorus.gearlever
+~~~
+
+### FileZilla
+https://flathub.org/de/apps/org.filezillaproject.Filezilla
+~~~shell
+flatpak install flathub org.filezillaproject.Filezilla
+~~~
+
 ### File Roller
 https://flathub.org/de/apps/org.gnome.FileRoller
 ~~~shell
 flatpak install flathub org.gnome.FileRoller
 ~~~
-
 
 ### Haruna Media Player
 https://flathub.org/de/apps/org.kde.haruna
@@ -214,6 +214,12 @@ https://flathub.org/apps/org.gnome.meld
 flatpak install flathub org.gnome.meld
 ~~~
 
+### Bruno
+https://flathub.org/de/apps/com.usebruno.Bruno
+~~~shell
+flatpak install flathub com.usebruno.Bruno
+~~~
+
 ### Insomnia
 https://flathub.org/apps/rest.insomnia.Insomnia
 ~~~shell
@@ -224,6 +230,14 @@ flatpak install flathub rest.insomnia.Insomnia
 https://flathub.org/apps/com.getpostman.Postman
 ~~~shell
 flatpak install flathub com.getpostman.Postman
+~~~
+
+**Issue**: Postman crashes trying to load certificates
+
+**Workaround**: create the certificates manually
+~~~
+cd ~/.var/app/com.getpostman.Postman/config/Postman/proxy \
+    && openssl req -subj '/C=US/CN=Postman Proxy' -new -newkey rsa:2048 -sha256 -days 365 -nodes -x509 -keyout postman-proxy-ca.key -out postman-proxy-ca.crt
 ~~~
 
 ### Disk Usage Analyzer
@@ -469,3 +483,11 @@ https://code.visualstudio.com/download
 
 ## MuonSSH
 https://github.com/devlinx9/muon-ssh/releases
+
+
+# Bereinigung
+1. Festplatten und Partitionen ermitteln: `lsblk`
+2. Status der Festplattenbelegung ermitteln: `duf`
+3. Bereinigung des Systems: `bleachbit`
+4. Backup / Dateisicherung: `rsync`, `Synology Drive`
+5. Neustart wenn Systemkomponenten aktualisiert werden
