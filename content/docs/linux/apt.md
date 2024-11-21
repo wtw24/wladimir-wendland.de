@@ -70,3 +70,8 @@ sudo apt install -t "o=LP-PPA-phpmyadmin" phpmyadmin
 ~~~shell
 sudo apt install -t "l=PPA for phpMyAdmin" phpmyadmin
 ~~~
+
+## Show sources lists
+~~~shell
+ls /etc/apt/sources.list.d/
+~~~
