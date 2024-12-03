@@ -133,3 +133,12 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub <server-user>@<server-public-ip-address>
 ~~~shell
 ssh -o StrictHostKeyChecking=no deploy@${HOST} -p ${PORT} 'rm -rf site_${BUILD_NUMBER} && mkdir site_${BUILD_NUMBER}'
 ~~~
+
+## SSH tunnel to forward port
+~~~shell
+ssh <host> -L<local_port>:<target_host>:<target_port>
+
+# Example:
+ssh <host> -L5306:localhost:3306
+mysql -u<mysql_user> -p<mysql_pass> --protocol=tcp --port=5306 -hlocalhost <mysql_database>
+~~~
