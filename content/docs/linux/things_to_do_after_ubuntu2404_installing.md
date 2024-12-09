@@ -85,7 +85,11 @@ sudo chmod 4755 /opt/phpstorm/jbr/lib/chrome-sandbox
 - `PhpStorm` > `Tools` > `Create Desktop Entry`
 
 ### DeaDBeeF Audio Player
-https://deadbeef.sourceforge.io/download.html
+- https://deadbeef.sourceforge.io/download.html
+- https://sourceforge.net/projects/deadbeef/files/travis/linux/
+~~~shell
+sudo apt install ./deadbeef-static*amd64.deb
+~~~
 
 
 
