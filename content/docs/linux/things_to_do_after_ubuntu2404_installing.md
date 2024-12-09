@@ -161,6 +161,8 @@ https://extensions.gnome.org/extension/517/caffeine
 https://extensions.gnome.org/extension/6385/steal-my-focus-window
 ### Astra Monitor
 https://extensions.gnome.org/extension/6682/astra-monitor/
+### Keep awake!
+https://extensions.gnome.org/extension/1097/keep-awake/
 
 
 
