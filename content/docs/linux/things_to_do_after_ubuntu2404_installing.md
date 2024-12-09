@@ -130,6 +130,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 ~~~
 plugins=(
     git
+    kube-ps1
     zsh-autosuggestions
     zsh-syntax-highlighting
     command-not-found
@@ -500,3 +501,22 @@ https://github.com/devlinx9/muon-ssh/releases
 3. Bereinigung des Systems: `bleachbit`
 4. Backup / Dateisicherung: `rsync`, `Synology Drive`
 5. Neustart wenn Systemkomponenten aktualisiert werden
+
+
+## kubectl
+~~~shell
+curl -LO https://dl.k8s.io/release/`curl -LS https://dl.k8s.io/release/stable.txt`/bin/linux/amd64/kubectl
+~~~
+~~~shell
+chmod +x ./kubectl
+~~~
+~~~shell
+sudo mv ./kubectl ~/bin/kubectl
+~~~
+
+## minikube
+https://minikube.sigs.k8s.io/docs/start/?arch=%2Flinux%2Fx86-64%2Fstable%2Fdebian+package
+~~~shell
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
+sudo dpkg -i minikube_latest_amd64.deb
+~~~
