@@ -155,6 +155,9 @@ https://extensions.gnome.org/extension/3628/arcmenu
 https://extensions.gnome.org/extension/517/caffeine
 ### Steal my focus window
 https://extensions.gnome.org/extension/6385/steal-my-focus-window
+### Astra Monitor
+https://extensions.gnome.org/extension/6682/astra-monitor/
+
 
 
 ## Install Flatpak
