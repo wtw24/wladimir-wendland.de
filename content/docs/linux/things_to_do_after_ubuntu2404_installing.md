@@ -45,7 +45,9 @@ sudo apt install \
   zsh \
   duf \
   powerline \
-  fonts-powerline
+  fonts-powerline \
+  pavucontrol \
+  pipewire-pulse
 ~~~
 
 ### System Tuning
