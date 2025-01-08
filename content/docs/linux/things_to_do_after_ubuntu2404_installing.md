@@ -179,6 +179,12 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 
 ## Install Flatpak Apps:
 
+### Koodo Reader
+https://flathub.org/de/apps/io.github.troyeguo.koodo-reader
+~~~shell
+flatpak install flathub io.github.troyeguo.koodo-reader
+~~~
+
 ### Flatseal
 https://flathub.org/apps/com.github.tchx84.Flatseal
 ~~~shell
