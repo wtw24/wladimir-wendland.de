@@ -179,10 +179,10 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 
 ## Install Flatpak Apps:
 
-### Koodo Reader
-https://flathub.org/de/apps/io.github.troyeguo.koodo-reader
+### Warehouse
+https://flathub.org/de/apps/io.github.flattool.Warehouse
 ~~~shell
-flatpak install flathub io.github.troyeguo.koodo-reader
+flatpak install flathub io.github.flattool.Warehouse
 ~~~
 
 ### Flatseal
@@ -201,6 +201,12 @@ flatpak install flathub it.mijorus.gearlever
 https://flathub.org/de/apps/org.filezillaproject.Filezilla
 ~~~shell
 flatpak install flathub org.filezillaproject.Filezilla
+~~~
+
+### Koodo Reader
+https://flathub.org/de/apps/io.github.troyeguo.koodo-reader
+~~~shell
+flatpak install flathub io.github.troyeguo.koodo-reader
 ~~~
 
 ### File Roller
