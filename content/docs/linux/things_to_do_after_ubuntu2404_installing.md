@@ -256,6 +256,13 @@ https://flathub.org/apps/com.getpostman.Postman
 flatpak install flathub com.getpostman.Postman
 ~~~
 
+### Pika Backup
+https://flathub.org/de/apps/org.gnome.World.PikaBackup
+~~~shell
+flatpak install flathub org.gnome.World.PikaBackup
+~~~
+
+
 **Issue**: Postman crashes trying to load certificates
 
 **Workaround**: create the certificates manually
