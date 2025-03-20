@@ -486,6 +486,26 @@ sudo apt install libfuse2
 
 ---
 
+## My GRUB config
+~~~shell
+xrandr
+~~~
+~~~shell
+sudo nano /etc/default/grub
+~~~
+~~~
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash video=2560x1440"
+~~~
+~~~shell
+sudo update-grub
+~~~
+~~~shell
+sudo update-initramfs -u
+~~~
+~~~shell
+sudo reboot
+~~~
+
 ## Scale GRUB menu on 4K displays
 ~~~shell
 sudo nano /etc/default/grub
