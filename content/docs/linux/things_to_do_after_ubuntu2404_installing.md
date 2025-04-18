@@ -232,6 +232,11 @@ flatpak install flathub com.skype.Client
 flatpak install flathub io.missioncenter.MissionCenter
 ~~~
 
+### PDF4QT
+~~~shell
+flatpak install flathub io.github.JakubMelka.Pdf4qt
+~~~
+
 ### Meld
 https://flathub.org/apps/org.gnome.meld
 ~~~shell
