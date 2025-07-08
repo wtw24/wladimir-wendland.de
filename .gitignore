@@ -1,3 +1,5 @@
-__tmp
-resources/_gen
-public
+# Hugo
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+.hugo_build.lock
