@@ -32,7 +32,8 @@ params:
 
   sidebar:
     emoji: 🐧
-    subtitle: Linux, Code & DevOps.
+    subtitle: Backend PHP Developer
+    subtitle2: " - Linux, Code & DevOps"
     avatar:
       enabled: true
       local: true
@@ -173,12 +174,27 @@ params:
       enabled: true
 
 menu:
-  main: []
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: -100
+      params:
+        icon: home
+        newTab: true
+
 
   social:
+    - identifier: xing
+      name: Xing
+      url: https://www.xing.com/profile/Wladimir_Wendland
+      weight: -100
+      params:
+        icon: brand-xing
     - identifier: github
       name: GitHub
       url: https://github.com/wtw24
+      weight: -90
       params:
         icon: brand-github
 

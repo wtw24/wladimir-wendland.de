@@ -7,6 +7,13 @@
     --body-custom-background: #2e2d2d;
     --code-background-color: #272822;
     --code-text-color: rgba(255, 255, 255, 0.9);
+
+    .menu-social {
+      svg {
+        color: var(--code-text-color);
+        fill: var(--code-text-color);
+      }
+    }
   }
 }
 
@@ -42,6 +49,11 @@ footer.site-footer {
 
 .sidebar {
   header {
+    .description-subtitle {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
     .site-avatar {
       width: 150px;
       height: 150px;
