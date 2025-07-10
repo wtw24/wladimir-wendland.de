@@ -33,7 +33,6 @@ params:
   sidebar:
     emoji: 🐧
     subtitle: Backend PHP Developer
-    subtitle2: " - Linux, Code & DevOps"
     avatar:
       enabled: true
       local: true
