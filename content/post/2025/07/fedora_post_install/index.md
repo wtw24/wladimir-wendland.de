@@ -385,7 +385,17 @@ gnome-terminal
 - https://github.com/ilyhalight/voice-over-translation
 
 ## Cursor
-- https://cursor.com/
+- https://cursor.com
+
+## Gemini CLI
+- https://github.com/google-gemini/gemini-cli
+
+**Prerequisites**: Ensure you have [Node.js version 20](https://nodejs.org/en/download) or higher installed.
+~~~shell
+npm install -g @google/gemini-cli
+
+gemini
+~~~
 
 ## Visual Studio Code
 - https://code.visualstudio.com/download
