@@ -1,5 +1,5 @@
 +++
-title = "Fix: "Could not initialise OpenGL support" for GTK Apps on Fedora with NVIDIA/Wayland"
+title = "Fix: 'Could not initialise OpenGL support' for GTK Apps on Fedora with NVIDIA/Wayland"
 date = "2025-08-01"
 tags = [
   "linux",
